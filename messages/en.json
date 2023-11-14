@@ -1,0 +1,163 @@
+{
+  "IndexPage": {
+    "Hero": {
+      "title": "Bring your ideas to life"
+    },
+    "VisionSection": {
+      "title": "Experts in <highlight>Developing</highlight> Your Vision",
+      "subtitle": "What are the reasons to choose us?",
+      "children": {
+        "commitment": {
+          "description": "We are committed to <highlight>connecting</highlight> with you and deeply <highlight>understanding</highlight> your needs. We meticulously <highlight>analyze</highlight> the variables of your project to <highlight>generate</highlight> alternatives that perfectly fit your quality, time, and price requirements."
+        },
+        "maximization": {
+          "description": "We are committed to <highlight>maximizing</highlight> the success of your project, developing it <highlight>meticulously</highlight>, and collaborating closely with you to fine-tune every detail and <highlight>meet your expectations</highlight>, ensuring the achievement of your <highlight>goals</highlight>."
+        },
+        "alliance": {
+          "description": "We form a <highlight>strategic alliance</highlight> to design a successful and <highlight>optimized</highlight> technological solution. Our collaboration goes beyond feasibility, committed to building a path to success, overcoming challenges with determination and <highlight>shared vision</highlight>."
+        }
+      }
+    },
+    "ServicesSection": {
+      "title": "Nuestros <highlight>Servicios</highlight>",
+      "subtitle": "¡Donde la Creatividad Se Convierte en Código!",
+      "children": {
+        "design": {
+          "title": "<highlight>UX / UI</highlight> Design",
+          "description": "Usability and intuitive navigation for users to achieve goals effortlessly."
+        },
+        "mobile": {
+          "title": "<highlight>Mobile</highlight> Apps",
+          "description": "We bring your idea to life in a fast and user-friendly application."
+        },
+        "development": {
+          "title": "<highlight>Software</highlight> Development",
+          "description": "Web development, corporate software, cloud services, and much more."
+        }
+      },
+      "contactLink": {
+        "label": "Get a quote!"
+      }
+    },
+    "TeamSection": {
+      "title": "Conoce al equipo de <highlight>Expertos</highlight>",
+      "subtitle": "¡Unidos por la excelencia!",
+      "team": {
+        "DavidAuza": {
+          "name": "David Auza",
+          "role": "CEO, CTO & Founder",
+          "description": "Strategic visionary, a passionate leader, and a catalyst for business success.",
+          "media": {
+            "instagram": "#",
+            "x": "#",
+            "facebook": "#"
+          }
+        },
+        "JuanSantos": {
+          "name": "Juan Santos",
+          "role": "Chief Business Officer — CBO",
+          "description": "Growth strategist and a driver of business excellence.",
+          "media": {
+            "instagram": "#",
+            "x": "#",
+            "facebook": "#"
+          }
+        },
+        "JuanEspinel": {
+          "name": "Juan Espinel",
+          "role": "Chief Quality Officer — CQO",
+          "description": "Guardian of excellence, master of continuous improvement, and advocate for quality in every detail.",
+          "media": {
+            "instagram": "#",
+            "x": "#",
+            "facebook": "#"
+          }
+        },
+        "JuanAuza": {
+          "name": "Juan Auza",
+          "role": "Software Developer",
+          "description": "Solution creator and architect of the digital future.",
+          "media": {
+            "instagram": "#",
+            "x": "#",
+            "facebook": "#"
+          }
+        }
+      }
+    },
+    "TechStackSection": {
+      "title": "Our <highlight>Technological</highlight> Ecosystem",
+      "subtitle": "If you can imagine it, you can create it!"
+    },
+    "title": "English i18n Test",
+    "description": "English Desc. i18n Test"
+  },
+  "ContactPage": {
+    "title": "Contact Form",
+    "description": "<p>In a world of ideas, we will transform yours into a vibrant reality.</p>",
+    "form": {
+      "name": "Name",
+      "phone": "Phone",
+      "message": "Message",
+      "email": "Email Address",
+      "submit": "Send Message"
+    }
+  },
+  "PortfolioPage": {
+    "title": "Our <highlight>Products</highlight>",
+    "description": "<p>Simplifying your life, one app at a time!</p>",
+    "children":{
+      "FartMan": {
+        "title": "FartMan Challenge",
+        "description": "Get ready to challenge your friends to a super fun game. Warning: The player with the lowest score buys dinner.",
+        "links": {
+          "url": "",
+          "appStore": "",
+          "googlePlay": ""
+        }
+      },
+      "SpaceInvaders": {
+        "title": "Space Invaders",
+        "description": "Get ready to save the galaxy! Play Space Invaders now and prove your bravery against the alien invasion."
+      },
+      "GymTracker": {
+        "title": "Gym Tracker",
+        "description": "Achieve your fitness goals with ease. Download our app to track your progress precisely."
+      },
+      "Prismay": {
+        "title": "Prismay",
+        "description": "Simplify your digital life! Download now and unify all your social networks in one place."
+      }
+    }
+  },
+  "Error": {
+    "title": "Something went wrong!",
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "<p>Please double-check the browser address bar or use the navigation to go to a known page.</p>"
+  },
+  "LocaleLayout": {
+    "title": "Superlative Software"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, en {English} es {Español} other {Unknown}}"
+  },
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "team": "Team",
+    "contact": "Contact Us"
+  },
+  "Footer": {
+    "title": "<highlight>We bring</highlight> your <highlight>digital</highlight> vision to life!",
+    "button": {
+      "label": "Let's do it!"
+    },
+    "tagline": "We create the future of the digital world, one line of code at a time, pixel by pixel.",
+    "copyright": "© SUPERLATIVE SOFTWARE. All rights reserved."
+  }
+}
