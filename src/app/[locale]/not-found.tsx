@@ -11,7 +11,9 @@ export default function NotFoundPage() {
 
   return (
     <PageLayout title={t('title')}>
-      <p className="max-w-[460px]">{t('description')}</p>
+      {t.rich('description', {
+        p: (chunks) => <p>{chunks}</p>
+      })}
     </PageLayout>
   );
 }

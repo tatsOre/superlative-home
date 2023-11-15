@@ -1,7 +1,9 @@
 {
   "IndexPage": {
     "Hero": {
-      "title": "Haz realidad tus ideas"
+      "title": "Haz realidad tus ideas",
+      "subtitle": "¡Creamos tu visión digital!",
+      "contactLink": "¡Vamos a hacerlo!"
     },
     "VisionSection": {
       "title": "Expertos en <highlight>Desarrollar</highlight> tu Visión",
@@ -154,9 +156,7 @@
   },
   "Footer": {
     "title": "<highlight>¡Creamos</highlight> tu visión <highlight>digital!</highlight>",
-    "button": {
-      "label": "¡Vamos a hacerlo!"
-    },
+    "contactLink": "¡Vamos a hacerlo!",
     "tagline": "Creamos el futuro del mundo digital, una línea de código a la vez, pixel por pixel.",
     "copyright": "© SUPERLATIVE SOFTWARE. Reservados todos los derechos."
   }
