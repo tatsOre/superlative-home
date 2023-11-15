@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { createTranslator, NextIntlClientProvider } from 'next-intl';
 import { ReactNode } from 'react';
 import Navigation from 'components/Navigation';
+import Footer from 'components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -33,7 +34,8 @@ export async function generateMetadata({ params: { locale } }: Props) {
   const t = createTranslator({ locale, messages });
 
   return {
-    title: t('LocaleLayout.title')
+    title: t('LocaleLayout.title'),
+    description: 'Superlative Software Home',
   };
 }
 
@@ -45,10 +47,11 @@ export default async function LocaleLayout({
 
   return (
     <html className="h-full" lang={locale}>
-      <body className={clsx(inter.className, 'flex h-full flex-col')}>
+      <body className={clsx(inter.className, 'flex h-full flex-col bg-black')}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navigation />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
