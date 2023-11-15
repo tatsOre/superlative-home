@@ -1,0 +1,163 @@
+{
+  "IndexPage": {
+    "Hero": {
+      "title": "Haz realidad tus ideas"
+    },
+    "VisionSection": {
+      "title": "Expertos en <highlight>Desarrollar</highlight> tu Visión",
+      "subtitle": "¿Cuáles son las razones para elegirnos?",
+      "children": {
+        "commitment": {
+          "description": "Nos comprometemos a <highlight>conectar</highlight> contigo y <highlight>entender</highlight> profundamente tus necesidades. <highlight>Analizamos</highlight> minuciosamente las variables de tu proyecto para <highlight>generar</highlight> alternativas que se ajusten perfectamente a tus requerimientos de calidad, tiempo y precio."
+        },
+        "maximization": {
+          "description": "Nos comprometemos a impulsar al <highlight>máximo</highlight> el éxito de tu proyecto, desarrollándolo <highlight>meticulosamente</highlight> y colaborando estrechamente contigo para ajustar cada detalle y <highlight>satisfacer</highlight> tus expectativas, asegurando así el logro de tus <highlight>metas</highlight>."
+        },
+        "alliance": {
+          "description": "Formamos una <highlight>alianza estratégica</highlight> para diseñar una solución tecnológica exitosa y <highlight>optimizada</highlight>. Nuestra colaboración va más allá de la viabilidad, comprometidos en construir un camino hacia el éxito, superando desafíos con determinación y <highlight>visión compartida</highlight>."
+        }
+      }
+    },
+    "ServicesSection": {
+      "title": "Nuestros <highlight>Servicios</highlight>",
+      "subtitle": "¡Donde la Creatividad Se Convierte en Código!",
+      "children": {
+        "design": {
+          "title": "Diseño <highlight>UX / UI</highlight>",
+          "description": "Usabilidad y navegación intuitiva para que los usuarios alcancen objetivos sin esfuerzo."
+        },
+        "mobile": {
+          "title": "Apps <highlight>Móviles</highlight>",
+          "description": "Creamos tu idea, en una aplicación rápida y fácil de usar."
+        },
+        "development": {
+          "title": "Desarrollo <highlight>Software</highlight>",
+          "description": "Desarrollo web, software corporativo, servicios en la nube y mucho más."
+        }
+      },
+      "contactLink": {
+        "label": "¡Cotizar ahora!"
+      }
+    },
+    "TeamSection": {
+      "title": "Conoce al equipo de <highlight>Expertos</highlight>",
+      "subtitle": "¡Unidos por la excelencia!",
+      "team": {
+        "DavidAuza": {
+          "name": "David Auza",
+          "role": "CEO, CTO & Founder",
+          "description": "Visionario estratégico, un líder apasionado y un catalizador del éxito empresarial.",
+          "media": {
+            "instagram": "#",
+            "x": "#",
+            "facebook": "#"
+          }
+        },
+        "JuanSantos": {
+          "name": "Juan Santos",
+          "role": "Chief Business Officer — CBO",
+          "description": "Estratega de crecimiento y un impulsor de la excelencia empresarial.",
+          "media": {
+            "instagram": "#",
+            "x": "#",
+            "facebook": "#"
+          }
+        },
+        "JuanEspinel": {
+          "name": "Juan Espinel",
+          "role": "Chief Quality Officer — CQO",
+          "description": "Guardián de la excelencia, el maestro de la mejora continua y el defensor de la calidad en cada detalle.",
+          "media": {
+            "instagram": "#",
+            "x": "#",
+            "facebook": "#"
+          }
+        },
+        "JuanAuza": {
+          "name": "Juan Auza",
+          "role": "Software Developer",
+          "description": "Creador de soluciones y un arquitecto del futuro digital.",
+          "media": {
+            "instagram": "#",
+            "x": "#",
+            "facebook": "#"
+          }
+        }
+      }
+    },
+    "TechStackSection": {
+      "title": "Nuestro <highlight>Ecosistema</highlight> Tecnológico",
+      "subtitle": "¡Si puedes imaginarlo, puedes crearlo!"
+    },
+    "title": "Español i18n Test",
+    "description": "Español Desc. i18n Test"
+  },
+  "ContactPage": {
+    "title": "Formulario de Contacto",
+    "description": "<p>En un mundo de ideas, transformaremos la tuya en una vibrante realidad.</p>",
+    "form": {
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "email": "Correo Electrónico",
+      "submit": "Enviar Mensaje"
+    }
+  },
+  "PortfolioPage": {
+    "title": "Nuestros <highlight>Productos</highlight>",
+    "description": "<p>¡Simplificando tu vida, una app a la vez!</p>",
+    "children": {
+      "FartMan": {
+        "title": "FartMan Challenge",
+        "description": "Prepárate para desafiar a tus amigos con este juego súper divertido. Estás avisado: El que saque la puntuación más baja paga la cena.",
+        "links": {
+          "url": "",
+          "appStore": "",
+          "googlePlay": ""
+        }
+      },
+      "SpaceInvaders": {
+        "title": "Space Invaders",
+        "description": "Prepárate para salvar la galaxia! Juega a Space Invaders ahora y demuestra tu valentía contra la invasión alienígena."
+      },
+      "GymTracker": {
+        "title": "Gym Tracker",
+        "description": "Alcanza tus metas fitness con facilidad. Descarga nuestra app y sigue tu progreso con precisión."
+      },
+      "Prismay": {
+        "title": "Prismay",
+        "description": "¡Simplifica tu vida digital! Descarga ahora y unifica todas tus redes sociales en un solo lugar."
+      }
+    }
+  },
+  "Error": {
+    "title": "Algo salió mal!",
+    "description": "<p>Lamentablemente, hemos encontrado un error.</p><p>Puedes intentar <retry>recargar la página </retry> que estabas visitando.</p>"
+  },
+  "NotFoundPage": {
+    "title": "Página no encontrada",
+    "description": "<p>Por favor, verifica la barra de direcciones del navegador o utiliza la navegación para ir a una página conocida.</p>"
+  },
+  "LocaleLayout": {
+    "title": "Superlative Software"
+  },
+  "LocaleSwitcher": {
+    "label": "Cambiar idioma",
+    "locale": "{locale, select, en {English} es {Español} other {Unknown}}"
+  },
+  "Navigation": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "team": "Equipo",
+    "contact": "Contáctenos"
+  },
+  "Footer": {
+    "title": "<highlight>¡Creamos</highlight> tu visión <highlight>digital!</highlight>",
+    "button": {
+      "label": "¡Vamos a hacerlo!"
+    },
+    "tagline": "Creamos el futuro del mundo digital, una línea de código a la vez, pixel por pixel.",
+    "copyright": "© SUPERLATIVE SOFTWARE. Reservados todos los derechos."
+  }
+}
