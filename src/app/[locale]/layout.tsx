@@ -1,12 +1,15 @@
 import clsx from 'clsx';
-import { Inter } from 'next/font/google';
-import { notFound } from 'next/navigation';
 import { createTranslator, NextIntlClientProvider } from 'next-intl';
 import { ReactNode } from 'react';
+import { Roboto } from 'next/font/google';
+import { notFound } from 'next/navigation';
 import Navigation from 'components/Navigation';
 import Footer from 'components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '500', '700', '900']
+});
 
 type Props = {
   children: ReactNode;
@@ -47,7 +50,7 @@ export default async function LocaleLayout({
 
   return (
     <html className="h-full" lang={locale}>
-      <body className={clsx(inter.className, 'flex h-full flex-col bg-black')}>
+      <body className={clsx(roboto.className, 'flex h-full flex-col bg-black')}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navigation />
           {children}

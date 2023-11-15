@@ -1,6 +1,5 @@
 'use client';
 
-import Spline from '@splinetool/react-spline';
 import { useTranslations } from 'next-intl';
 
 export default function IndexHero() {
