@@ -84,15 +84,33 @@
             "x": "#",
             "facebook": "#"
           }
+        },
+        "RicardoTrejos": {
+          "name": "Ricardo Trejos",
+          "role": "Director Front-End",
+          "description": "El líder creativo detrás de experiencias webs y apps excepcionales.",
+          "media": {
+            "instagram": "#",
+            "x": "#",
+            "facebook": "#"
+          }
+        },
+        "KevinPiratoba": {
+          "name": "Kevin Piratoba",
+          "role": "Chief Creative Officer —  CCO",
+          "description": "Visionario maestro de la innovación y la creatividad.",
+          "media": {
+            "instagram": "#",
+            "x": "#",
+            "facebook": "#"
+          }
         }
       }
     },
     "TechStackSection": {
       "title": "Nuestro <highlight>Ecosistema</highlight> Tecnológico",
       "subtitle": "¡Si puedes imaginarlo, puedes crearlo!"
-    },
-    "title": "Español i18n Test",
-    "description": "Español Desc. i18n Test"
+    }
   },
   "ContactPage": {
     "title": "Formulario de Contacto",
@@ -141,7 +159,7 @@
     "description": "<p>Por favor, verifica la barra de direcciones del navegador o utiliza la navegación para ir a una página conocida.</p>"
   },
   "LocaleLayout": {
-    "title": "Superlative Software"
+    "title": "SUPERLATIVE SOFTWARE"
   },
   "LocaleSwitcher": {
     "label": "Cambiar idioma",
@@ -159,5 +177,11 @@
     "contactLink": "¡Vamos a hacerlo!",
     "tagline": "Creamos el futuro del mundo digital, una línea de código a la vez, pixel por pixel.",
     "copyright": "© SUPERLATIVE SOFTWARE. Reservados todos los derechos."
+  },
+  "Assets": {
+    "ProviderBadge": {
+      "AppStore": "/products/badges/es-app-store-badge.svg",
+      "GooglePlay": "/products/badges/es-google-play-badge.svg"
+    }
   }
 }

@@ -3,7 +3,7 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,css}'],
   theme: {
     fontFamily: {
-      sans: ['Inter', 'sans-serif']
+      sans: ['Roboto', 'sans-serif']
     },
     container: {
       center: true,
@@ -12,13 +12,12 @@ module.exports = {
       }
     },
     extend: {
-      background: {
-        'primary-dark': '#121212',
-        'primary-light': '#212121',
-        'primary-accent': '#424242',
-        'primary-accent-light': '#616161',
-        'primary-accent-dark': '#303030',
-        'primary-accent-transparent': 'rgba(66, 66, 66, 0.5)',
+      colors: {
+        'dark-gray': {
+          light: '#212121',
+          DEFAULT: '#101010'
+        },
+        'accent': '#F1CE6A'
       },
     }
   },
