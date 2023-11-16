@@ -5,7 +5,7 @@
       "subtitle": "¡Creamos tu visión digital!",
       "contactLink": "¡Vamos a hacerlo!"
     },
-    "VisionSection": {
+    "ExpertiseSection": {
       "title": "Expertos en <highlight>Desarrollar</highlight> tu Visión",
       "subtitle": "¿Cuáles son las razones para elegirnos?",
       "children": {
@@ -107,14 +107,14 @@
         }
       }
     },
-    "TechStackSection": {
+    "TechEnvSection": {
       "title": "Nuestro <highlight>Ecosistema</highlight> Tecnológico",
       "subtitle": "¡Si puedes imaginarlo, puedes crearlo!"
     }
   },
   "ContactPage": {
     "title": "Formulario de Contacto",
-    "description": "<p>En un mundo de ideas, transformaremos la tuya en una vibrante realidad.</p>",
+    "description": "En un mundo de ideas, transformaremos la tuya en una vibrante realidad.",
     "form": {
       "name": "Nombre",
       "phone": "Teléfono",
@@ -125,7 +125,7 @@
   },
   "PortfolioPage": {
     "title": "Nuestros <highlight>Productos</highlight>",
-    "description": "<p>¡Simplificando tu vida, una app a la vez!</p>",
+    "subtitle": "¡Simplificando tu vida, una app a la vez!",
     "children": {
       "FartMan": {
         "title": "FartMan Challenge",

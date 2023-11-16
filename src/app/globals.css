@@ -8,3 +8,9 @@
     max-height: max-content !important;
   }
 }
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance
+  }
+}

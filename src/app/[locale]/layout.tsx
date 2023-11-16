@@ -49,8 +49,8 @@ export default async function LocaleLayout({
   const messages = await getMessages(locale);
 
   return (
-    <html className="h-full" lang={locale}>
-      <body className={clsx(roboto.className, 'flex h-full flex-col bg-black')}>
+    <html className="h-full scroll-smooth" lang={locale}>
+      <body className={clsx(roboto.className, 'flex h-full flex-col bg-black text-white')}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navigation />
           {children}

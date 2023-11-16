@@ -5,7 +5,7 @@
       "subtitle": "We bring your digital vision to life!",
       "contactLink": "Let's do it!"
     },
-    "VisionSection": {
+    "ExpertiseSection": {
       "title": "Experts in <highlight>Developing</highlight> Your Vision",
       "subtitle": "What are the reasons to choose us?",
       "children": {
@@ -21,8 +21,8 @@
       }
     },
     "ServicesSection": {
-      "title": "Nuestros <highlight>Servicios</highlight>",
-      "subtitle": "¡Donde la Creatividad Se Convierte en Código!",
+      "title": "Our <highlight>Services</highlight>",
+      "subtitle": "Where Creativity Turns into Code!",
       "children": {
         "design": {
           "title": "<highlight>UX / UI</highlight> Design",
@@ -42,8 +42,8 @@
       }
     },
     "TeamSection": {
-      "title": "Conoce al equipo de <highlight>Expertos</highlight>",
-      "subtitle": "¡Unidos por la excelencia!",
+      "title": "Meet the Team of <highlight>Experts</highlight>",
+      "subtitle": "United for Excellence!",
       "team": {
         "DavidAuza": {
           "name": "David Auza",
@@ -107,14 +107,14 @@
         }
       }
     },
-    "TechStackSection": {
+    "TechEnvSection": {
       "title": "Our <highlight>Technological</highlight> Ecosystem",
       "subtitle": "If you can imagine it, you can create it!"
     }
   },
   "ContactPage": {
     "title": "Contact Form",
-    "description": "<p>In a world of ideas, we will transform yours into a vibrant reality.</p>",
+    "description": "In a world of ideas, we will transform yours into a vibrant reality.",
     "form": {
       "name": "Name",
       "phone": "Phone",
@@ -125,7 +125,7 @@
   },
   "PortfolioPage": {
     "title": "Our <highlight>Products</highlight>",
-    "description": "<p>Simplifying your life, one app at a time!</p>",
+    "subtitle": "Simplifying your life, one app at a time!",
     "children": {
       "FartMan": {
         "title": "FartMan Challenge",
