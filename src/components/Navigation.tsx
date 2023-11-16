@@ -8,17 +8,15 @@ export default function Navigation() {
   const t = useTranslations('Navigation');
 
   return (
-    <div className='container'>
-      <nav className="flex justify-between p-2 text-white">
-        <div>
-          <NavigationLink href="/">{t('home')}</NavigationLink>
-          <NavigationLink href="/#services">{t('services')}</NavigationLink>
-          <NavigationLink href="/portfolio">{t('portfolio')}</NavigationLink>
-          <NavigationLink href="/#team">{t('team')}</NavigationLink>
-          <NavigationLink href="/contact">{t('contact')}</NavigationLink>
-        </div>
-        <LocaleSwitcher />
-      </nav>
-    </div>
+    <nav className="flex justify-between p-2 text-white">
+      <div>
+        <NavigationLink href={t('home.href')}>{t('home.label')}</NavigationLink>
+        <NavigationLink href={t('services.href')}>{t('services.label')}</NavigationLink>
+        <NavigationLink href={t('portfolio.href')}>{t('portfolio.label')}</NavigationLink>
+        <NavigationLink href={t('team.href')}>{t('team.label')}</NavigationLink>
+        <NavigationLink href={t('contact.href')}>{t('contact.label')}</NavigationLink>
+      </div>
+      <LocaleSwitcher />
+    </nav>
   );
 }

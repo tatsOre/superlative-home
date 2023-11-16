@@ -131,7 +131,7 @@
         "title": "FartMan Challenge",
         "description": "Get ready to challenge your friends to a super fun game. Warning: The player with the lowest score buys dinner.",
         "links": {
-          "url": "",
+          "href": "",
           "appStore": "",
           "googlePlay": ""
         }
@@ -166,17 +166,31 @@
     "locale": "{locale, select, en {English} es {Español} other {Unknown}}"
   },
   "Navigation": {
-    "home": "Home",
-    "services": "Services",
-    "portfolio": "Portfolio",
-    "team": "Team",
-    "contact": "Contact Us"
+    "home": {
+      "label": "Home",
+      "href": "/"
+    },
+    "services": {
+      "label": "Services",
+      "href": "/#services"
+    },
+    "portfolio": {
+      "label": "Portfolio",
+      "href": "/portfolio"
+    },
+    "team": {
+      "label": "Team",
+      "href": "/#team"
+    },
+    "contact": {
+      "label": "Contact Us",
+      "href": "/contact"
+    }
   },
   "Footer": {
-    "title": "<highlight>We bring</highlight> your <highlight>digital</highlight> vision to life!",
+    "tagline": "<highlight>We bring</highlight> your <highlight>digital</highlight> vision to life!",
     "contactLink": "Let's do it!",
-    "tagline": "We create the future of the digital world, one line of code at a time, pixel by pixel.",
-    "copyright": "© SUPERLATIVE SOFTWARE. All rights reserved."
+    "smallprint": "We create the future of the digital world, one line of code at a time, pixel by pixel.<br></br>© SUPERLATIVE SOFTWARE. All rights reserved."
   },
   "Assets": {
     "ProviderBadge": {

@@ -5,6 +5,7 @@ import { Roboto } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import Navigation from 'components/Navigation';
 import Footer from 'components/Footer';
+import Image from 'next/image';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -52,8 +53,18 @@ export default async function LocaleLayout({
     <html className="h-full scroll-smooth" lang={locale}>
       <body className={clsx(roboto.className, 'flex h-full flex-col bg-black text-white')}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Navigation />
-          {children}
+          <header className='max-w-[90%] xl:max-w-[72rem] mx-auto flex'>
+            <Image
+              src="/logo-small.svg"
+              alt='superlative software logotype'
+              height={41}
+              width={172}
+            />
+            <Navigation />
+          </header>
+          <main className='flex-1'>
+            {children}
+          </main>
           <Footer />
         </NextIntlClientProvider>
       </body>

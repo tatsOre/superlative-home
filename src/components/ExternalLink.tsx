@@ -1,20 +1,20 @@
+import { ReactNode } from 'react';
+
 type Props = {
-  title: string;
-  description: string;
+  children: ReactNode | string;
   href: string;
+  [rest: string]: any;
 };
 
-export default function ExternalLink({ description, href, title }: Props) {
+export default function ExternalLink({ href, children, ...rest }: Props) {
   return (
     <a
       href={href}
       rel="noreferrer"
       target="_blank"
+      {...rest}
     >
-      <p>
-        {title} <span>→</span>
-      </p>
-      <p>{description}</p>
+      {children}
     </a>
   );
 }

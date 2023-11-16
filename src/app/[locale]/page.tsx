@@ -16,7 +16,7 @@ export default function IndexPage() {
           highlight: (chunks) => <span className='text-accent'>{chunks}</span>
         })}
         subtitle={t('ExpertiseSection.subtitle')}
-        children={<div className='h-10 bg-slate-950'></div>}
+        children={[]}
       />
 
       <Section
@@ -25,7 +25,7 @@ export default function IndexPage() {
           highlight: (chunks) => <span className='text-accent'>{chunks}</span>
         })}
         subtitle={t('ServicesSection.subtitle')}
-        children={<div className='h-10 bg-slate-950'></div>}
+        children={[]}
       />
 
       <Section
@@ -34,7 +34,7 @@ export default function IndexPage() {
           highlight: (chunks) => <span className='text-accent'>{chunks}</span>
         })}
         subtitle={t('TeamSection.subtitle')}
-        children={<div className='h-10 bg-slate-950'></div>}
+        children={[]}
       />
 
       <Section
@@ -42,7 +42,7 @@ export default function IndexPage() {
           highlight: (chunks) => <span className='text-accent'>{chunks}</span>
         })}
         subtitle={t('TechEnvSection.subtitle')}
-        children={<div className='h-10 bg-slate-950'></div>}
+        children={[]}
       />
     </>
   );
