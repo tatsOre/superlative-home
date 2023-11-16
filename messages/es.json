@@ -5,7 +5,7 @@
       "subtitle": "¡Creamos tu visión digital!",
       "contactLink": "¡Vamos a hacerlo!"
     },
-    "VisionSection": {
+    "ExpertiseSection": {
       "title": "Expertos en <highlight>Desarrollar</highlight> tu Visión",
       "subtitle": "¿Cuáles son las razones para elegirnos?",
       "children": {
@@ -107,14 +107,14 @@
         }
       }
     },
-    "TechStackSection": {
+    "TechEnvSection": {
       "title": "Nuestro <highlight>Ecosistema</highlight> Tecnológico",
       "subtitle": "¡Si puedes imaginarlo, puedes crearlo!"
     }
   },
   "ContactPage": {
     "title": "Formulario de Contacto",
-    "description": "<p>En un mundo de ideas, transformaremos la tuya en una vibrante realidad.</p>",
+    "description": "En un mundo de ideas, transformaremos la tuya en una vibrante realidad.",
     "form": {
       "name": "Nombre",
       "phone": "Teléfono",
@@ -125,13 +125,13 @@
   },
   "PortfolioPage": {
     "title": "Nuestros <highlight>Productos</highlight>",
-    "description": "<p>¡Simplificando tu vida, una app a la vez!</p>",
+    "subtitle": "¡Simplificando tu vida, una app a la vez!",
     "children": {
       "FartMan": {
         "title": "FartMan Challenge",
         "description": "Prepárate para desafiar a tus amigos con este juego súper divertido. Estás avisado: El que saque la puntuación más baja paga la cena.",
         "links": {
-          "url": "",
+          "href": "",
           "appStore": "",
           "googlePlay": ""
         }
@@ -166,17 +166,31 @@
     "locale": "{locale, select, en {English} es {Español} other {Unknown}}"
   },
   "Navigation": {
-    "home": "Inicio",
-    "services": "Servicios",
-    "portfolio": "Portafolio",
-    "team": "Equipo",
-    "contact": "Contáctenos"
+    "home": {
+      "label": "Inicio",
+      "href": "/"
+    },
+    "services": {
+      "label": "Servicios",
+      "href": "/#services"
+    },
+    "portfolio": {
+      "label": "Portafolio",
+      "href": "/portfolio"
+    },
+    "team": {
+      "label": "Equipo",
+      "href": "/#team"
+    },
+    "contact": {
+      "label": "Contáctenos",
+      "href": "/contact"
+    }
   },
   "Footer": {
-    "title": "<highlight>¡Creamos</highlight> tu visión <highlight>digital!</highlight>",
+    "tagline": "<highlight>¡Creamos</highlight> tu visión <highlight>digital!</highlight>",
     "contactLink": "¡Vamos a hacerlo!",
-    "tagline": "Creamos el futuro del mundo digital, una línea de código a la vez, pixel por pixel.",
-    "copyright": "© SUPERLATIVE SOFTWARE. Reservados todos los derechos."
+    "smallprint": "Creamos el futuro del mundo digital, una línea de código a la vez, pixel por pixel.<br></br>© SUPERLATIVE SOFTWARE. Reservados todos los derechos."
   },
   "Assets": {
     "ProviderBadge": {
