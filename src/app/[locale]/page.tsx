@@ -16,8 +16,9 @@ export default function IndexPage() {
           highlight: (chunks) => <span className='text-accent'>{chunks}</span>
         })}
         subtitle={t('ExpertiseSection.subtitle')}
-        children={[]}
-      />
+      >
+        <div></div>
+      </Section>
 
       <Section
         id='services'
@@ -25,8 +26,9 @@ export default function IndexPage() {
           highlight: (chunks) => <span className='text-accent'>{chunks}</span>
         })}
         subtitle={t('ServicesSection.subtitle')}
-        children={[]}
-      />
+      >
+        <div></div>
+      </Section>
 
       <Section
         id='team'
@@ -34,16 +36,18 @@ export default function IndexPage() {
           highlight: (chunks) => <span className='text-accent'>{chunks}</span>
         })}
         subtitle={t('TeamSection.subtitle')}
-        children={[]}
-      />
+      >
+        <div></div>
+      </Section>
 
       <Section
         title={t.rich('TechEnvSection.title', {
           highlight: (chunks) => <span className='text-accent'>{chunks}</span>
         })}
         subtitle={t('TechEnvSection.subtitle')}
-        children={[]}
-      />
+      >
+        <div></div>
+      </Section>
     </>
   );
 }

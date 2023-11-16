@@ -14,9 +14,10 @@ export default function FooterNavigation() {
     <Link
       key={key}
       href={t(`${key}.href`)}
-      children={t(`${key}.label`)}
       className='font-semibold text-2xl'
-    />
+    >
+      {t(`${key}.label`)}
+    </Link>
   ))
 
   return (
