@@ -20,7 +20,7 @@ module.exports = {
         'accent': '#F1CE6A'
       },
       screens: {
-        'xs': '480px'
+        'xs': '400px'
       }
     }
   },

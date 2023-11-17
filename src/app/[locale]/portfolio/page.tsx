@@ -1,8 +1,8 @@
 'use client';
 
+import ProductsContent from 'components/ProductsSection';
 import Section from 'components/Section';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 
 export default function PortfolioPage() {
   const t = useTranslations('PortfolioPage');
@@ -16,6 +16,7 @@ export default function PortfolioPage() {
       })}
       subtitle={t('subtitle')}
     >
+      <ProductsContent />
     </Section>
   );
 }

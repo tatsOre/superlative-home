@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function TechEnvironmentContent() {
 
-  const keys = [
+  const techEnvItems = [
     { src: '/stack/logo-flutter.svg', title: 'flutter', h: 60, w: 145 },
     { src: '/stack/logo-ruby.svg', title: 'ruby', h: 56, w: 161 },
     { src: '/stack/logo-java.svg', title: 'java', h: 74, w: 125 },
@@ -12,7 +12,7 @@ export default function TechEnvironmentContent() {
     { src: '/stack/logo-react.svg', title: 'react', h: 55, w: 165 }
   ] as const;
 
-  const renderedContent = keys.map(({ src, title, h, w }) => (
+  const renderedContent = techEnvItems.map(({ src, title, h, w }) => (
     <div key={title} role="img" aria-label={`${title} logo`}>
       <Image src={src} alt={title} height={h} width={w} />
     </div>

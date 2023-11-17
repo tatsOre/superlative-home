@@ -129,12 +129,7 @@
     "children": {
       "FartMan": {
         "title": "FartMan Challenge",
-        "description": "Prepárate para desafiar a tus amigos con este juego súper divertido. Estás avisado: El que saque la puntuación más baja paga la cena.",
-        "links": {
-          "href": "",
-          "appStore": "",
-          "googlePlay": ""
-        }
+        "description": "Prepárate para desafiar a tus amigos con este juego súper divertido. Estás avisado: El que saque la puntuación más baja paga la cena."
       },
       "SpaceInvaders": {
         "title": "Space Invaders",

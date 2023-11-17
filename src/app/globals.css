@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  div[data-product="Prismay"] {
+    flex-basis: clamp(33%, 40%, 165px);
+  }
+}
+
 @layer components {
   .spline {
     height: fit-content !important;

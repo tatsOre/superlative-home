@@ -129,12 +129,7 @@
     "children": {
       "FartMan": {
         "title": "FartMan Challenge",
-        "description": "Get ready to challenge your friends to a super fun game. Warning: The player with the lowest score buys dinner.",
-        "links": {
-          "href": "",
-          "appStore": "",
-          "googlePlay": ""
-        }
+        "description": "Get ready to challenge your friends to a super fun game. Warning: The player with the lowest score buys dinner."
       },
       "SpaceInvaders": {
         "title": "Space Invaders",
