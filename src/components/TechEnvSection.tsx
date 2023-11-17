@@ -13,7 +13,7 @@ export default function TechEnvironmentContent() {
   ] as const;
 
   const renderedContent = keys.map(({ src, title, h, w }) => (
-    <div role="img" aria-label={`${title} logo`}>
+    <div key={title} role="img" aria-label={`${title} logo`}>
       <Image src={src} alt={title} height={h} width={w} />
     </div>
   ))

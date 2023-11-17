@@ -19,10 +19,6 @@ module.exports = {
         },
         'accent': '#F1CE6A'
       },
-      fontSize: {
-        'sec-heading': 'clamp(1.875rem, 5vw, 2.5rem)',
-        'sec-subtitle': 'clamp(1rem, 2vw, 1.25rem)',
-      },
       screens: {
         'xs': '480px'
       }
