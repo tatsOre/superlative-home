@@ -10,7 +10,19 @@
 }
 
 @layer utilities {
+  .container {
+    @apply max-w-[90%] xl:max-w-[72rem] mx-auto;
+  }
+
   .text-balance {
-    text-wrap: balance
+    text-wrap: balance;
+    /* Provides a temporal workaround for headings */
+    text-align: center;
+  }
+
+  .balance-poly {
+    /* Provides some styling for browsers that do not support text-wrap: */
+    text-align: center;
+    max-width: 80%;
   }
 }

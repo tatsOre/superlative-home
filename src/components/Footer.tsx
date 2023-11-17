@@ -12,28 +12,27 @@ export default function Footer() {
     {
       src: "/icon-media-ig.svg",
       href: "#",
-      title: "Instagram"
+      title: "Visit our Instagram Page"
     },
     {
       src: "/icon-media-x.svg",
       href: "#",
-      title: "X"
+      title: "Visit our X Page"
     },
     {
       src: "/icon-media-fb.svg",
       href: "#",
-      title: "Facebook"
+      title: "Visit our Facebook Page"
     }
   ].map(({ src, href, title }) => (
     <ExternalLink key={title} href={href} title={title}>
       <Image src={src} alt={title} width={40} height={40} aria-hidden="true" />
-      <span className="sr-only">{title}</span>
     </ExternalLink>
   ))
 
   return (
     <footer className='bg-dark-gray py-24'>
-      <div className="max-w-[90%] xl:max-w-[72rem] mx-auto flex flex-col items-center gap-y-[4.25rem] lg:flex-row lg:flex-wrap lg:justify-between lg:items-end">
+      <div className="container flex flex-col items-center gap-y-[4.25rem] lg:flex-row lg:flex-wrap lg:justify-between lg:items-end">
 
         <Image
           src="/logo-large.svg"
@@ -43,7 +42,7 @@ export default function Footer() {
         />
 
         <div className='flex flex-col items-center gap-y-6 lg:flex-1'>
-          <p className='text-3xl xl:text-4xl text-balance text-center'>
+          <p className='text-3xl xl:text-4xl text-center'>
             {t.rich('tagline', { highlight: (chunks) => <b>{chunks}</b> })}
           </p>
 
