@@ -19,7 +19,7 @@ export default function TechEnvironmentContent() {
   ))
 
   return (
-    <div className='w-[90%] lg:w-full flex flex-wrap gap-x-16 gap-y-8 items-end justify-center'>
+    <div className='w-[90%] lg:w-full flex flex-col items-center sm:flex-wrap sm:flex-row sm:items-end justify-center gap-x-16 gap-y-8'>
       {renderedContent}
     </div>
   );
