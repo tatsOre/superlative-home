@@ -1,7 +1,7 @@
 {
   "IndexPage": {
     "Hero": {
-      "title": "Make your ideas come true",
+      "title": "Make your ideas<br></br>come true",
       "subtitle": "We bring your digital vision to life!",
       "contactLink": "Let's do it!"
     },
@@ -25,7 +25,7 @@
       "subtitle": "Where Creativity Turns into Code!",
       "children": {
         "design": {
-          "title": "<highlight>UX / UI</highlight> Design",
+          "title": "<highlight>UX/UI</highlight> Design",
           "description": "Usability and intuitive navigation for users to achieve goals effortlessly."
         },
         "mobile": {
@@ -129,12 +129,7 @@
     "children": {
       "FartMan": {
         "title": "FartMan Challenge",
-        "description": "Get ready to challenge your friends to a super fun game. Warning: The player with the lowest score buys dinner.",
-        "links": {
-          "href": "",
-          "appStore": "",
-          "googlePlay": ""
-        }
+        "description": "Get ready to challenge your friends to a super fun game. Warning: The player with the lowest score buys dinner."
       },
       "SpaceInvaders": {
         "title": "Space Invaders",

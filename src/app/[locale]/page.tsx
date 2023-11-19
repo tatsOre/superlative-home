@@ -1,7 +1,10 @@
 'use client';
 
+import ExpertiseContent from 'components/ExpertiseSection';
 import IndexHero from 'components/IndexHero';
 import Section from 'components/Section';
+import ServicesContent from 'components/ServicesSection';
+import TechEnvironmentContent from 'components/TechEnvSection';
 import { useTranslations } from 'next-intl';
 
 export default function IndexPage() {
@@ -16,8 +19,9 @@ export default function IndexPage() {
           highlight: (chunks) => <span className='text-accent'>{chunks}</span>
         })}
         subtitle={t('ExpertiseSection.subtitle')}
+        className='bg-dark-gray'
       >
-        <div></div>
+        <ExpertiseContent />
       </Section>
 
       <Section
@@ -27,7 +31,7 @@ export default function IndexPage() {
         })}
         subtitle={t('ServicesSection.subtitle')}
       >
-        <div></div>
+        <ServicesContent />
       </Section>
 
       <Section
@@ -36,6 +40,7 @@ export default function IndexPage() {
           highlight: (chunks) => <span className='text-accent'>{chunks}</span>
         })}
         subtitle={t('TeamSection.subtitle')}
+        className='bg-dark-gray'
       >
         <div></div>
       </Section>
@@ -46,7 +51,7 @@ export default function IndexPage() {
         })}
         subtitle={t('TechEnvSection.subtitle')}
       >
-        <div></div>
+        <TechEnvironmentContent />
       </Section>
     </>
   );

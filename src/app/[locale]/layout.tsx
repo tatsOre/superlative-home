@@ -53,7 +53,7 @@ export default async function LocaleLayout({
     <html className="h-full scroll-smooth" lang={locale}>
       <body className={clsx(roboto.className, 'flex h-full flex-col bg-black text-white')}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <header className='max-w-[90%] xl:max-w-[72rem] mx-auto flex'>
+          <header className='container flex flex-wrap'>
             <Image
               src="/logo-small.svg"
               alt='superlative software logotype'

@@ -6,8 +6,11 @@ export default function IndexHero() {
   const t = useTranslations('IndexPage.Hero');
 
   return (
-    <div className='max-w-[90%] xl:max-w-[72rem] mx-auto'>
-      <h1 className=''>{t('title')}</h1>
+    <div className='container pt-20 pb-28'>
+      <h1 className='font-bold leading-none hero-heading'>
+        {t.rich('title', { br: () => <br /> })}
+      </h1>
+      <p className='font-light hero-subtitle mb-4'>{t('subtitle')}</p>
     </div>
   );
 }
