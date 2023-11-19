@@ -23,7 +23,7 @@ export default function ProductCard({
 }: Props) {
   return (
     <article className="basis-full md:basis-[48%] lg:max-w-[500px] flex flex-col">
-      <div className="flex-1 bg-dark-gray rounded-[40px] p-10 pl-5 pt-5 mb-8 xs:flex flex-wrap items-center">
+      <div className="flex-1 bg-dark-gray rounded-[40px] p-8 pl-4 pt-4 xs:flex flex-wrap items-center">
         <h3 className="sr-only">{title}</h3>
 
         <div className="relative bg-dark-gray-light rounded-2xl p-4 mb-4 xs:mb-0 xs:w-36 xs:h-36 xl:w-44 xl:h-44">
@@ -48,13 +48,12 @@ export default function ProductCard({
           />
         </div>
 
-        <p className="font-light text-center text-lg lg:text-2xl mx-6 mt-6">
+        <p className="font-light text-center text-lg mt-6 mx-2 lg:text-2xl lg:mx-6">
           {description}
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-between gap-4">
-
+      <div className="flex flex-wrap justify-between gap-4 mt-4">
         <div className="block basis-[45%] h-[70px]">
           <ExternalLink href={hrefAppStore} title="" >
             <ProviderBadge provider="AppStore" />
@@ -67,7 +66,7 @@ export default function ProductCard({
           </ExternalLink>
         </div>
 
-        <ExternalLink href={href} className="block mx-auto mt-4">
+        <ExternalLink href={href} className="block mx-auto">
           <span className='bg-accent text-black font-bold text-[24px] py-2 px-6 rounded-full text-center'>
             Ver más...
           </span>
