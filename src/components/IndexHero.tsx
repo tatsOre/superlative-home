@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import InternalLink from './Link';
 
 export default function IndexHero() {
   const t = useTranslations('IndexPage.Hero');
@@ -11,6 +12,9 @@ export default function IndexHero() {
         {t('title')}
       </h1>
       <p className='font-light hero-subtitle mb-4'>{t('subtitle')}</p>
+      <br />
+
+      <InternalLink href='/contact'>¡Vamos a hacerlo!</InternalLink>
     </div>
   );
 }

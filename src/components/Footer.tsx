@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import ExternalLink from './ExternalLink';
 import FooterNavigation from './FooterNavigation';
+import InternalLink from './Link';
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -46,9 +47,7 @@ export default function Footer() {
             {t.rich('tagline', { highlight: (chunks) => <b>{chunks}</b> })}
           </p>
 
-          <a className='inline-block bg-accent text-black font-bold text-[32px] py-2 px-6 rounded-full'>
-            {t('contactLink')}
-          </a>
+          <InternalLink href='/contact' roundedFull>{t('contactLink')}</InternalLink>
 
           <div className='flex gap-x-2.5'>
             {renderedMediaIcons}

@@ -53,7 +53,7 @@ export default function ProductCard({
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-between gap-4 mt-4">
+      <div className="flex flex-wrap justify-between mt-6">
         <div className="block basis-[45%] h-[70px]">
           <ExternalLink href={hrefAppStore} title="" >
             <ProviderBadge provider="AppStore" />
@@ -66,8 +66,8 @@ export default function ProductCard({
           </ExternalLink>
         </div>
 
-        <ExternalLink href={href} className="block mx-auto">
-          <span className='bg-accent text-black font-bold text-[24px] py-2 px-6 rounded-full text-center'>
+        <ExternalLink href={href} className="block mx-auto mt-6">
+          <span className='inline-block bg-accent hover:bg-white text-black font-bold py-2 px-8 text-2xl lg:text-xl rounded-full'>
             Ver más...
           </span>
         </ExternalLink>
