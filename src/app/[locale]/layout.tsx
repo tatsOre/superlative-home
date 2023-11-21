@@ -3,9 +3,8 @@ import { createTranslator, NextIntlClientProvider } from 'next-intl';
 import { ReactNode } from 'react';
 import { Roboto } from 'next/font/google';
 import { notFound } from 'next/navigation';
-import Navigation from 'components/Navigation';
 import Footer from 'components/Footer';
-import Image from 'next/image';
+import Header from 'components/Header';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -51,17 +50,9 @@ export default async function LocaleLayout({
 
   return (
     <html className="h-full scroll-smooth" lang={locale}>
-      <body className={clsx(roboto.className, 'flex h-full flex-col bg-black text-white')}>
+      <body className={clsx(roboto.className, 'flex h-full flex-col bg-black text-white pt-12')}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <header className='container flex flex-wrap'>
-            <Image
-              src="/logo-small.svg"
-              alt='superlative software logotype'
-              height={41}
-              width={172}
-            />
-            <Navigation />
-          </header>
+          <Header />
           <main className='flex-1'>
             {children}
           </main>

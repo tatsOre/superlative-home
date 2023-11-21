@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+  header {
+    border-radius: 3.125rem;
+    background: linear-gradient(rgb(5, 5, 5), rgba(5, 5, 5)) padding-box,
+      linear-gradient(to right, rgb(0, 0, 0, 0.3), rgb(255, 255, 255, 0.3), rgb(0, 0, 0, 0.3)) border-box;
+    border: 1px solid transparent;
+  }
+
   div[data-product="Prismay"] {
     flex-basis: clamp(33%, 40%, 165px);
   }
@@ -13,11 +20,99 @@
     height: fit-content !important;
     max-height: max-content !important;
   }
+
+  .mobile--menu-button {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    background-color: #161616;
+    border-radius: 5px;
+  }
+
+  .mobile--menu-button .bar {
+    width: 20px;
+    position: relative;
+    right: -2px;
+    z-index: 0;
+    transition: all 0ms 200ms;
+  }
+
+  .mobile--menu-button .bar,
+  .mobile--menu-button .bar::before,
+  .mobile--menu-button .bar::after {
+    height: 2.5px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .mobile--menu-button .bar::before,
+  .mobile--menu-button .bar::after {
+    content: '';
+    width: 24px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+  }
+
+  .mobile--menu-button .bar::before {
+    bottom: 8px;
+    transition: bottom 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1),
+      transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .mobile--menu-button .bar::after {
+    top: 8px;
+    transition: top 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1),
+      transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .mobile--menu-button .bar.animate {
+    background: #161616;
+  }
+
+  .mobile--menu-button .bar.animate::before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 200ms cubic-bezier(0.23, 1, 0.32, 1),
+      transform 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .mobile--menu-button .bar.animate::after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 200ms cubic-bezier(0.23, 1, 0.32, 1),
+      transform 200ms 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .header--navigation {
+    @apply flex mx-7;
+  }
+
+  .header--navigation .nav--link {
+    @apply inline-block px-6 py-1 font-normal rounded-full transition-colors;
+  }
+
+  .nav--link-contact {
+    @apply text-black bg-white hover:bg-accent;
+  }
+
+  .nav--link-standard {
+    @apply text-zinc-300 hover:text-white;
+  }
+
+  .nav--link-contact.nav--link-active {
+    @apply bg-accent;
+  }
+
+  .nav--link-standard.nav--link-active {
+    @apply text-white bg-zinc-700;
+  }
 }
 
 @layer utilities {
   .container {
-    @apply max-w-[90%] xl:max-w-[72rem] mx-auto;
+    @apply max-w-[80%] xl:max-w-[72rem] mx-auto;
   }
 
   .sec-heading {

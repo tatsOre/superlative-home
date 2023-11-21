@@ -12,13 +12,15 @@ type Props = Omit<ComponentProps<typeof Link>, 'href'> & {
 export default function NavigationLink({ href, ...rest }: Props) {
   const pathname = usePathname();
   const isActive = pathname === href;
+  const isContactPage = href === "/contact";
 
   return (
     <Link
       aria-current={isActive}
       className={clsx(
-        'inline-block px-2 py-3 transition-colors',
-        isActive ? 'text-white' : 'text-gray-400 hover:text-gray-200'
+        "nav--link",
+        isContactPage ? "nav--link-contact" : "nav--link-standard",
+        isActive && "nav--link-active"
       )}
       href={href}
       {...rest}
