@@ -23,7 +23,7 @@ export default function ProductCard({
 }: Props) {
   return (
     <article className="basis-full md:basis-[48%] lg:max-w-[500px] flex flex-col">
-      <div className="flex-1 bg-dark-gray rounded-[40px] p-8 pl-4 pt-4 xs:flex flex-wrap items-center">
+      <div className="flex-1 bg-dark-gray rounded-[40px] p-8 xs:pl-4 pt-4 xs:flex flex-wrap items-center">
         <h3 className="sr-only">{title}</h3>
 
         <div className="relative bg-dark-gray-light rounded-2xl p-4 mb-4 xs:mb-0 xs:w-36 xs:h-36 xl:w-44 xl:h-44">
