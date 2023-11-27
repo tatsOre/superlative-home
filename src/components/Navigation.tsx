@@ -6,7 +6,7 @@ import NavigationLink from './NavigationLink';
 type Props = {
   className?: string;
   id?: string;
-  onClick(): void;
+  onClick?(): void;
 };
 
 export default function NavigationItems({ className, id, onClick }: Props) {
