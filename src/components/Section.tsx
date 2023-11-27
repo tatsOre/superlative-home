@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 type Props = {
   id?: string;
   className?: string;
-  title: ReactNode | string;
+  title?: ReactNode | string;
   subtitle?: ReactNode | string;
   children: ReactNode;
 };
@@ -14,7 +14,7 @@ export default function Section({
 }: Props) {
   return (
     <section id={id} className={clsx('py-20', className && className)}>
-      <div className='container flex flex-col items-center'>
+      <div className='container'>
         <h2 className='font-bold sec-heading text-balance leading-9 lg:leading-normal'>
           {title}
         </h2>

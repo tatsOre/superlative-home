@@ -113,9 +113,9 @@
     }
   },
   "ContactPage": {
-    "title": "Formulario de Contacto",
-    "description": "En un mundo de ideas, transformaremos la tuya en una vibrante realidad.",
+    "tagline": "En un <highlight> mundo de ideas</highlight>, transformaremos la tuya en una <highlight>vibrante realidad</highlight>.",
     "form": {
+      "title": "Formulario de Contacto",
       "name": "Nombre",
       "phone": "Teléfono",
       "message": "Mensaje",

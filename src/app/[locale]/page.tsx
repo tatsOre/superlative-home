@@ -34,6 +34,7 @@ export default function IndexPage() {
         <ServicesContent />
       </Section>
 
+      {/*       
       <Section
         id='team'
         title={t.rich('TeamSection.title', {
@@ -43,13 +44,15 @@ export default function IndexPage() {
         className='bg-dark-gray'
       >
         <div></div>
-      </Section>
+      </Section> 
+      */}
 
       <Section
         title={t.rich('TechEnvSection.title', {
           highlight: (chunks) => <span className='text-accent'>{chunks}</span>
         })}
         subtitle={t('TechEnvSection.subtitle')}
+        className='bg-dark-gray'
       >
         <TechEnvironmentContent />
       </Section>

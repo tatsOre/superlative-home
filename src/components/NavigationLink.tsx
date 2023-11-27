@@ -19,7 +19,7 @@ export default function NavigationLink({ href, ...rest }: Props) {
       aria-current={isActive}
       className={clsx(
         "nav--link",
-        isContactPage ? "nav--link-contact" : "nav--link-standard",
+        isContactPage ? "nav--link-contact" : "nav--link-default",
         isActive && "nav--link-active"
       )}
       href={href}

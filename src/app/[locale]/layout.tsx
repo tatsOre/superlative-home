@@ -5,6 +5,7 @@ import { Roboto } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
+import MobileHeader from 'components/HeaderMobile';
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -53,6 +54,7 @@ export default async function LocaleLayout({
       <body className={clsx(roboto.className, 'flex h-full flex-col bg-black text-white pt-12')}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
+          <MobileHeader />
           <main className='flex-1'>
             {children}
           </main>

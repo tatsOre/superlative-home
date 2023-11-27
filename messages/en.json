@@ -113,9 +113,9 @@
     }
   },
   "ContactPage": {
-    "title": "Contact Form",
-    "description": "In a world of ideas, we will transform yours into a vibrant reality.",
+    "tagline": "In a <highlight>world of ideas</highlight>, we will transform yours into a <highlight>vibrant reality</highlight>.",
     "form": {
+      "title": "Contact Form",
       "name": "Name",
       "phone": "Phone",
       "message": "Message",

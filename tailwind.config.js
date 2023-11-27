@@ -15,7 +15,8 @@ module.exports = {
       colors: {
         'dark-gray': {
           light: '#212121',
-          DEFAULT: '#101010'
+          DEFAULT: '#101010',
+          darker: '#070707'
         },
         'accent': '#F1CE6A'
       },
