@@ -3,23 +3,13 @@
 @tailwind utilities;
 
 @layer base {
-  header {
-    /* background: linear-gradient(rgb(5, 5, 5), rgba(5, 5, 5)) padding-box,
-      linear-gradient(to right, rgb(0, 0, 0, 0.3), rgb(255, 255, 255, 0.3), rgb(0, 0, 0, 0.3)) border-box; */
-  }
-
   div[data-product="Prismay"] {
     flex-basis: clamp(33%, 40%, 165px);
   }
 }
 
 @layer components {
-  .spline {
-    height: fit-content !important;
-    max-height: max-content !important;
-  }
-
-  .mobile--menu-button {
+  .nav--button-mobile {
     width: 40px;
     height: 40px;
     display: grid;
@@ -84,8 +74,8 @@
 
   }
 
-  .header--navigation {
-    @apply flex mx-7;
+  .navbar--default {
+    @apply flex gap-x-3 mx-9;
 
     & .nav--link {
       @apply inline-block px-6 py-1 font-normal rounded-full transition-colors;
@@ -99,13 +89,33 @@
       }
     }
 
-    & .nav--link-standard {
+    & .nav--link-default {
       @apply text-zinc-300 hover:text-white;
 
       &.nav--link-active {
         @apply text-white bg-zinc-700;
       }
     }
+  }
+
+  .navbar--small {
+    @apply fixed z-10 -top-full inset-x-10 p-2 bg-black transition-all duration-300;
+
+    &-open {
+      @apply top-[10%];
+    }
+
+    & .nav--link {
+      @apply w-full block text-center py-3.5 font-bold text-[22px];
+    }
+  }
+
+  .contact--form {
+    background: linear-gradient(180deg,
+        #131313 2.27%,
+        rgba(24, 24, 24, 0.00) 40.75%,
+        rgba(24, 24, 24, 0.03) 73%,
+        rgba(22, 22, 22, 0.44) 101.86%);
   }
 }
 
@@ -124,6 +134,7 @@
 
   .hero-heading {
     font-size: clamp(3.25rem, 10vw, 5.625rem);
+    //font-size: 7.5vw;
   }
 
   .hero-subtitle {

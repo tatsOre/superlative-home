@@ -1,6 +1,8 @@
 'use client';
 
+import clsx from 'clsx';
 import { useTranslations } from 'next-intl';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import ExternalLink from './ExternalLink';
 import FooterNavigation from './FooterNavigation';
@@ -8,6 +10,10 @@ import InternalLink from './Link';
 
 export default function Footer() {
   const t = useTranslations('Footer');
+
+  // Temporary styling while "Team section" is introduced again:
+  const pathname = usePathname();
+  const isHome = pathname === "/" || pathname === "/es";
 
   const renderedMediaIcons = [
     {
@@ -32,14 +38,14 @@ export default function Footer() {
   ))
 
   return (
-    <footer className='bg-dark-gray py-24'>
+    <footer className={clsx(!isHome && 'bg-dark-gray', 'py-24')}>
       <div className="container flex flex-col items-center gap-y-[4.25rem] lg:flex-row lg:flex-wrap lg:justify-between lg:items-end">
 
         <Image
-          src="/logo-large.svg"
+          src="/logo-large-b.svg"
           alt='superlative software logotype'
-          width={290}
-          height={186}
+          width={295}
+          height={200}
         />
 
         <div className='flex flex-col items-center gap-y-6 lg:flex-1'>

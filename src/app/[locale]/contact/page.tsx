@@ -1,16 +1,21 @@
 'use client';
 
+import ContactForm from 'components/ContactForm';
+import Section from 'components/Section';
 import { useTranslations } from 'next-intl';
-import PageLayout from 'components/PageLayout';
 
 export default function ContactPage() {
   const t = useTranslations('ContactPage');
 
   return (
-    <PageLayout title={t('title')}>
-      <div className='text-white'>
-        {/** */}
-      </div>
-    </PageLayout>
+    <Section>
+      <ContactForm />
+
+      <p className='text-xl lg:text-3xl text-center mx-auto max-w-[570px] mt-20'>
+        {t.rich('tagline', {
+          highlight: (chunks) => <b>{chunks}</b>
+        })}
+      </p>
+    </Section>
   );
 }

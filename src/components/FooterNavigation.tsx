@@ -21,7 +21,7 @@ export default function FooterNavigation() {
   ))
 
   return (
-    <nav className="flex flex-col gap-y-2.5 gap-x-5 md:basis-full md:flex-row md:justify-evenly lg:flex-col lg:basis-[290px] lg:pl-8">
+    <nav className="flex flex-col gap-y-2.5 gap-x-6 md:basis-full md:flex-row md:justify-evenly lg:flex-col lg:basis-[290px] lg:pl-8">
       {renderedLinks}
       <ExternalLink
         aria-label="Chat on WhatsApp"
