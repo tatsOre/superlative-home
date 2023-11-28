@@ -9,7 +9,7 @@ export default function ExpertiseContent() {
   const keys = ['commitment', 'maximization', 'alliance'] as const;
 
   const renderedContent = keys.map((key) => (
-    <div key={key} className='md:basis-[28%] xl:basis-[25%] mb-20 md:mb-0'>
+    <div key={key} className='mb-20 md:w-[42%] min-[1200px]:w-[30%] xl:mb-0 xl:w-[28%]'>
       <ImageMock />
       <p className='text-lg font-light text-justify'>
         {t.rich(`${key}.description`, {
@@ -20,8 +20,9 @@ export default function ExpertiseContent() {
     </div>
   ));
 
+  /** ServicesContent and ExpertiseContent share layout CSS rules: */
   return (
-    <div className='md:flex md:justify-between px-6 sm:px-0'>
+    <div className='md:flex md:flex-wrap md:justify-between md:[&>*:last-child]:mx-auto min-[1200px]:[&>*:last-child]:mx-0'>
       {renderedContent}
     </div>
   );

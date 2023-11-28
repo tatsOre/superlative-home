@@ -16,10 +16,10 @@ export default function TechEnvironmentContent() {
     <div key={title} role="img" aria-label={`${title} logo`}>
       <Image src={src} alt={title} height={h} width={w} />
     </div>
-  ))
+  ));
 
   return (
-    <div className='w-[90%] lg:w-full flex flex-col items-center sm:flex-wrap sm:flex-row sm:items-end justify-center gap-x-16 gap-y-8'>
+    <div className='lg:w-full flex flex-col items-center sm:flex-wrap sm:flex-row sm:items-end justify-center gap-x-16 gap-y-8'>
       {renderedContent}
     </div>
   );

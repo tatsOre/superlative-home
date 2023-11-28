@@ -3,7 +3,16 @@
 import React from "react";
 import clsx from "clsx";
 
-export default function MobileMenuButton({ open, onClick, ...rest }) {
+interface MobileMenuButtonProps {
+  open: boolean;
+  onClick: () => void;
+}
+
+const MobileMenuButton: React.FC<MobileMenuButtonProps> = ({
+  open, onClick, ...rest
+}) => {
+  const buttonLabel = open ? "close" : "open";
+
   return (
     <button
       className="nav--button-mobile"
@@ -13,8 +22,10 @@ export default function MobileMenuButton({ open, onClick, ...rest }) {
       onClick={onClick}
       {...rest}
     >
-      <span className="sr-only">{open ? "close" : "open"} main menu</span>
-      <span className={clsx(["bar", open && "animate"])}></span>
+      <span className="sr-only">{buttonLabel} main menu</span>
+      <span className={clsx("bar", { animate: open })}></span>
     </button>
   );
-}
+};
+
+export default MobileMenuButton;

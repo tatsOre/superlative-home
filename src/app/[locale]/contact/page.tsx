@@ -9,7 +9,9 @@ export default function ContactPage() {
 
   return (
     <Section>
-      <ContactForm />
+      <div className='lg:max-w-[500px] lg:ml-auto'>
+        <ContactForm />
+      </div>
 
       <p className='text-xl lg:text-3xl text-center mx-auto max-w-[570px] mt-20'>
         {t.rich('tagline', {

@@ -1,12 +1,11 @@
-import { ReactNode } from 'react';
+import { ReactNode, AnchorHTMLAttributes } from 'react';
 
-type Props = {
+type ExternalLinkProps = {
   children: ReactNode | string;
   href: string;
-  [rest: string]: any;
-};
+} & AnchorHTMLAttributes<HTMLAnchorElement>;
 
-export default function ExternalLink({ href, children, ...rest }: Props) {
+export default function ExternalLink({ href, children, ...rest }: ExternalLinkProps) {
   return (
     <a
       href={href}
