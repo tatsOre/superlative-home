@@ -8,7 +8,7 @@ export default function ContactForm() {
   const inputClasses = 'text-base bg-dark-gray py-4 px-5 rounded-lg';
 
   return (
-    <form className="rounded-3xl px-6 py-8 text-center flex flex-wrap gap-3 contact--form">
+    <form className="rounded-3xl px-3 sm:px-6 py-8 text-center flex flex-wrap gap-3 contact--form">
       <h2 className="text-2xl lg:text-4xl font-bold basis-full mb-6">
         {t('title')}
       </h2>

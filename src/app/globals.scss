@@ -6,9 +6,61 @@
   div[data-product="Prismay"] {
     flex-basis: clamp(33%, 40%, 165px);
   }
+
+  div[data-thumbnail="hero"] {
+    background: url('/thumbnails/expertise-2.png') no-repeat;
+    background-position: 45% -35px;
+  }
+
+  div[data-thumbnail="commitment"] {
+    background: url('/thumbnails/expertise-1.png') no-repeat;
+    background-position: 45% 10px;
+  }
+
+  div[data-thumbnail="maximization"] {
+    background: url('/thumbnails/expertise-2.png') no-repeat;
+    background-position: 45% -35px;
+  }
+
+  div[data-thumbnail="alliance"] {
+    background: url('/thumbnails/expertise-3.png') no-repeat;
+    background-position: 45% -30px;
+  }
+
+  div[data-thumbnail="design"] {
+    background: url('/thumbnails/services-1.png') no-repeat;
+    background-position: 45% -30px;
+  }
+
+  div[data-thumbnail="mobile"] {
+    background: url('/thumbnails/services-2.png') no-repeat;
+    background-position: 45% -30px;
+  }
+
+  div[data-thumbnail="development"] {
+    background: url('/thumbnails/services-3.png') no-repeat;
+    background-position: 45% -10px;
+  }
 }
 
 @layer components {
+  .hero-heading {
+    max-width: 40rem;
+    font-size: clamp(3.25rem, 10vw, 5.625rem);
+    line-height: 1.05;
+
+    .highlight {
+      margin-inline-start: 0.5rem;
+      padding-inline-start: 0.5rem;
+      padding-inline-end: 0.5rem;
+      border-image-source: url('/text-accent.svg');
+      border-image-slice: 17 19;
+      border-image-width: 15px 15px 15px 15px;
+      border-image-outset: 0px 0px 0px 0px;
+      border-image-repeat: stretch stretch;
+    }
+  }
+
   .nav--button-mobile {
     width: 40px;
     height: 40px;
@@ -99,10 +151,10 @@
   }
 
   .navbar--small {
-    @apply fixed z-10 -top-full inset-x-10 p-2 bg-black transition-all duration-300;
+    @apply fixed z-10 -top-full inset-x-6 p-2 bg-black transition-all duration-300;
 
     &-open {
-      @apply top-28;
+      @apply top-24;
     }
 
     & .nav--link {
@@ -121,7 +173,7 @@
 
 @layer utilities {
   .container {
-    @apply max-w-[85%] sm:max-w-[80%] xl:max-w-[72rem] mx-auto;
+    @apply max-w-[80%] xl:max-w-[72rem] mx-auto;
   }
 
   .sec-heading {
@@ -130,23 +182,6 @@
 
   .sec-subtitle {
     font-size: clamp(1rem, 2vw, 1.25rem);
-  }
-
-  .hero-heading {
-    max-width: 40rem;
-    font-size: clamp(3.25rem, 10vw, 5.625rem);
-    line-height: 1.05;
-
-    .highlight {
-      margin-inline-start: 0.65rem;
-      padding-inline-start: 0.5rem;
-      padding-inline-end: 0.5rem;
-      border-image-source: url('/text-accent.svg');
-      border-image-slice: 17 19;
-      border-image-width: 15px 15px 15px 15px;
-      border-image-outset: 0px 0px 0px 0px;
-      border-image-repeat: stretch stretch;
-    }
   }
 
   .hero-subtitle {
