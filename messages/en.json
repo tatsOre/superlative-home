@@ -1,7 +1,7 @@
 {
   "IndexPage": {
     "Hero": {
-      "title": "Make your ideas come true",
+      "title": "Make your<highlight>ideas</highlight> come true",
       "subtitle": "We bring your digital vision to life!",
       "contactLink": "Let's do it!"
     },
@@ -126,6 +126,7 @@
   "PortfolioPage": {
     "title": "Our <highlight>Products</highlight>",
     "subtitle": "Simplifying your life, one app at a time!",
+    "LinksLabel": "Show more...",
     "children": {
       "FartMan": {
         "title": "FartMan Challenge",

@@ -17,7 +17,7 @@ export default function InternalLink({
   return (
     <Link
       className={clsx(
-        'inline-block w-fit bg-accent hover:bg-white text-black font-bold px-8 py-2',
+        'inline-block w-fit bg-accent hover:bg-white text-black font-bold px-5 py-1 lg:px-8 lg:py-2',
         roundedFull ? 'rounded-full' : 'rounded-xl',
         small ? 'text-2xl' : 'text-[32px]',
         className

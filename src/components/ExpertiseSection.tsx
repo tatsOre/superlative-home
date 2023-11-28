@@ -13,7 +13,7 @@ export default function ExpertiseContent() {
       <ImageMock />
       <p className='text-lg font-light text-justify'>
         {t.rich(`${key}.description`, {
-          highlight: (chunks) => <b>{chunks}</b>,
+          highlight: (chunks) => <span className='font-bold'>{chunks}</span>,
           br: () => <br />
         })}
       </p>
@@ -21,7 +21,7 @@ export default function ExpertiseContent() {
   ));
 
   return (
-    <div className='md:flex md:justify-between px-12 sm:px-0'>
+    <div className='md:flex md:justify-between px-6 sm:px-0'>
       {renderedContent}
     </div>
   );
