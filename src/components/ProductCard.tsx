@@ -10,6 +10,7 @@ type Props = {
   href: string;
   hrefAppStore: string;
   hrefGooglePlay: string;
+  linkLabel: string;
 };
 
 export default function ProductCard({
@@ -19,14 +20,15 @@ export default function ProductCard({
   thumbnailSrc,
   href,
   hrefAppStore,
-  hrefGooglePlay
+  hrefGooglePlay,
+  linkLabel
 }: Props) {
   return (
     <article className="basis-full md:basis-[48%] lg:max-w-[500px] flex flex-col">
       <div className="flex-1 bg-dark-gray rounded-[40px] p-8 xs:pl-4 pt-4 xs:flex flex-wrap items-center">
         <h3 className="sr-only">{title}</h3>
 
-        <div className="relative bg-dark-gray-light rounded-2xl p-4 mb-4 xs:mb-0 xs:w-36 xs:h-36 xl:w-44 xl:h-44">
+        <div className="relative bg-dark-gray-light rounded-2xl p-4 mb-4 basis-5/12">
           <Image
             src={thumbnailSrc}
             alt={`${title} thumbnail`}
@@ -48,7 +50,7 @@ export default function ProductCard({
           />
         </div>
 
-        <p className="font-light text-center text-lg mt-6 mx-2 lg:text-2xl lg:mx-6">
+        <p className="mt-4 font-light text-center text-lg mx-4 xl:text-2xl lg:mx-6">
           {description}
         </p>
       </div>
@@ -68,7 +70,7 @@ export default function ProductCard({
 
         <ExternalLink href={href} className="block mx-auto mt-6">
           <span className='inline-block bg-accent hover:bg-white text-black font-bold py-2 px-8 text-2xl lg:text-xl rounded-full'>
-            Ver más...
+            {linkLabel}
           </span>
         </ExternalLink>
       </div>

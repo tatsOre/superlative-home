@@ -21,6 +21,7 @@ export default function ProductsContent() {
       href='#'
       hrefAppStore='#'
       hrefGooglePlay='#'
+      linkLabel={t('LinksLabel')}
     />
   ));
 

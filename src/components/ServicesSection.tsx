@@ -32,7 +32,7 @@ export default function ServicesContent() {
   ));
 
   return (
-    <div className='md:flex md:justify-between px-12 sm:px-0'>
+    <div className='md:flex md:justify-between px-8 sm:px-0'>
       {renderedContent}
     </div>
   );

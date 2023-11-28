@@ -102,7 +102,7 @@
     @apply fixed z-10 -top-full inset-x-10 p-2 bg-black transition-all duration-300;
 
     &-open {
-      @apply top-[10%];
+      @apply top-28;
     }
 
     & .nav--link {
@@ -133,8 +133,21 @@
   }
 
   .hero-heading {
+    max-width: 40rem;
     font-size: clamp(3.25rem, 10vw, 5.625rem);
-    //font-size: 7.5vw;
+    line-height: 1;
+
+    .highlight {
+      display: inline-block;
+      margin-inline-start: 0.65rem;
+      padding-inline-start: 0.5rem;
+      padding-inline-end: 0.5rem;
+      border-image-source: url('/title-accent.png');
+      border-image-slice: 17 19;
+      border-image-width: 15px 15px 15px 15px;
+      border-image-outset: 0px 0px 0px 0px;
+      border-image-repeat: stretch stretch;
+    }
   }
 
   .hero-subtitle {

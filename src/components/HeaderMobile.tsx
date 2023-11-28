@@ -2,8 +2,8 @@
 
 import clsx from "clsx";
 import React from "react";
-import Image from "next/image";
 import useClickOutside from "../hooks/useClickOutside";
+import Logotype from "./Logotype";
 import MobileNavButton from "./MobileNavButton";
 import NavigationItems from "./Navigation";
 
@@ -21,12 +21,8 @@ export default function MobileHeader() {
   return (
     <header className='relative w-full block min-[920px]:hidden'>
       <div className='container flex items-center justify-between'>
-        <Image
-          src="/logo-small.svg"
-          alt='superlative software logotype'
-          height={40}
-          width={170}
-        />
+
+        <Logotype small />
 
         <div ref={menuRef}>
           <MobileNavButton open={openMenu} onClick={toggleMenuState} />

@@ -7,6 +7,7 @@ import Image from 'next/image';
 import ExternalLink from './ExternalLink';
 import FooterNavigation from './FooterNavigation';
 import InternalLink from './Link';
+import Logotype from './Logotype';
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -41,19 +42,14 @@ export default function Footer() {
     <footer className={clsx(!isHome && 'bg-dark-gray', 'py-24')}>
       <div className="container flex flex-col items-center gap-y-[4.25rem] lg:flex-row lg:flex-wrap lg:justify-between lg:items-end">
 
-        <Image
-          src="/logo-large-b.svg"
-          alt='superlative software logotype'
-          width={295}
-          height={200}
-        />
+        <Logotype />
 
         <div className='flex flex-col items-center gap-y-6 lg:flex-1'>
           <p className='text-3xl xl:text-4xl text-center'>
             {t.rich('tagline', { highlight: (chunks) => <b>{chunks}</b> })}
           </p>
 
-          <InternalLink href='/contact' roundedFull>{t('contactLink')}</InternalLink>
+          <InternalLink href='/contact' small roundedFull>{t('contactLink')}</InternalLink>
 
           <div className='flex gap-x-2.5'>
             {renderedMediaIcons}
