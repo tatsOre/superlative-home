@@ -14,23 +14,23 @@ export default function FooterNavigation() {
     <Link
       key={key}
       href={t(`${key}.href`)}
-      className='font-semibold text-2xl'
+      className='font-semibold text-xl'
     >
       {t(`${key}.label`)}
     </Link>
-  ))
+  ));
 
   return (
-    <nav className="flex flex-col gap-y-2.5 gap-x-6 md:basis-full md:flex-row md:justify-evenly lg:flex-col lg:basis-[290px] lg:pl-8">
+    <nav className="flex flex-col gap-y-2.5 gap-x-6 md:flex-row md:justify-evenly min-[1100px]:flex-col">
       {renderedLinks}
       <ExternalLink
         aria-label="Chat on WhatsApp"
         href="https://wa.me/573185241871"
         className='block flex items-center'
       >
-        <span aria-hidden="true" className="inline-block mr-1.5">
-          <Image src="/icon-media-whatsapp.svg" alt="ws-icon" height={22} width={22} />
-        </span>
+        <div aria-hidden="true" className="mr-1.5">
+          <Image src="/icon-media-whatsapp.svg" alt="WhatsApp Icon" height={22} width={22} />
+        </div>
         +57 318 5241871
       </ExternalLink>
     </nav>

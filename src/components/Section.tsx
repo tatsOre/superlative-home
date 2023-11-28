@@ -13,7 +13,7 @@ export default function Section({
   id, title, subtitle, children, className
 }: Props) {
   return (
-    <section id={id} className={clsx('py-20', className && className)}>
+    <section id={id} className={clsx('py-20', className)}>
       <div className='container'>
         <h2 className='font-bold sec-heading text-balance leading-9 lg:leading-normal'>
           {title}

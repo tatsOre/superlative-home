@@ -10,7 +10,7 @@ export default function ServicesContent() {
   const keys = ['design', 'mobile', 'development'] as const;
 
   const renderedContent = keys.map((key) => (
-    <div key={key} className='md:basis-[28%] xl:basis-[25%]'>
+    <div key={key} className='mb-20 md:w-[42%] min-[1200px]:w-[30%] xl:mb-0 xl:w-[28%]'>
       <div className='flex flex-col h-full text-center mb-20 md:mb-0'>
         <ImageMock />
 
@@ -31,8 +31,9 @@ export default function ServicesContent() {
     </div>
   ));
 
+  /** ServicesContent and ExpertiseContent share layout CSS rules: */
   return (
-    <div className='md:flex md:justify-between px-8 sm:px-0'>
+    <div className='md:flex md:flex-wrap md:justify-between md:[&>*:last-child]:mx-auto min-[1200px]:[&>*:last-child]:mx-0'>
       {renderedContent}
     </div>
   );

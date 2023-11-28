@@ -1,25 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
 
-type Props = {
+type LogotypeOptions = {
+  src: string;
+  width: number;
+  height: number;
+};
+
+type LogotypeProps = {
   small?: boolean;
 };
 
-export default function Logotype({ small }: Props) {
-  const options = {
-    small: { src: "/logo-small.svg", width: 170, height: 40 },
-    large: { src: "/logo-large.svg", width: 295, height: 200 }
-  };
+const logotypeOptions: Record<string, LogotypeOptions> = {
+  small: { src: "/logo-small.svg", width: 170, height: 40 },
+  large: { src: "/logo-large.svg", width: 285, height: 190 },
+};
 
-  const attributes = small ? options.small : options.large;
+export default function Logotype({ small }: LogotypeProps) {
+  const selectedOptions = small ? logotypeOptions.small : logotypeOptions.large;
 
   return (
     <Link href="/">
       <Image
-        src={attributes.src}
-        alt='superlative software logotype'
-        height={attributes.height}
-        width={attributes.width}
+        src={selectedOptions.src}
+        alt='Superlative Software Logotype'
+        height={selectedOptions.height}
+        width={selectedOptions.width}
       />
     </Link>
   );

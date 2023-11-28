@@ -121,7 +121,7 @@
 
 @layer utilities {
   .container {
-    @apply max-w-[80%] xl:max-w-[72rem] mx-auto;
+    @apply max-w-[85%] sm:max-w-[80%] xl:max-w-[72rem] mx-auto;
   }
 
   .sec-heading {
@@ -135,14 +135,13 @@
   .hero-heading {
     max-width: 40rem;
     font-size: clamp(3.25rem, 10vw, 5.625rem);
-    line-height: 1;
+    line-height: 1.05;
 
     .highlight {
-      display: inline-block;
       margin-inline-start: 0.65rem;
       padding-inline-start: 0.5rem;
       padding-inline-end: 0.5rem;
-      border-image-source: url('/title-accent.png');
+      border-image-source: url('/text-accent.svg');
       border-image-slice: 17 19;
       border-image-width: 15px 15px 15px 15px;
       border-image-outset: 0px 0px 0px 0px;

@@ -24,8 +24,8 @@ export default function NavigationItems({ className, id, onClick }: Props) {
         {t('portfolio.label')}
       </NavigationLink>
       {/* <NavigationLink href={t('team.href')} onClick={onClick}>
-      {t('team.label')}<
-      /NavigationLink> */}
+        {t('team.label')}
+      </NavigationLink> */}
       <NavigationLink href={t('contact.href')} onClick={onClick}>
         {t('contact.label')}
       </NavigationLink>
