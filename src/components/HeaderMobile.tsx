@@ -29,7 +29,7 @@ export default function MobileHeader() {
 
           <NavigationItems
             id="navbar-mobile"
-            className={clsx("navbar--small", openMenu && "navbar--small-open")}
+            className={clsx("navbar--small", { "navbar--small-open": openMenu })}
             onClick={toggleMenuState}
           />
         </div>
