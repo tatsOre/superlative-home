@@ -117,7 +117,7 @@
     @apply flex gap-x-3 mx-9;
 
     & .nav--link {
-      @apply inline-block px-6 py-1 font-normal rounded-full transition-colors;
+      @apply inline-block px-6 py-1 font-bold tracking-wide rounded-full transition-colors;
     }
 
     & .nav--link-contact {
