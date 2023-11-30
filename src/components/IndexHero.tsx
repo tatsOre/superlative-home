@@ -2,37 +2,33 @@
 
 import { useTranslations } from 'next-intl';
 import InternalLink from './Link';
-import Image from 'next/image';
+import Figure from './Figure';
+import { default as ASSETS } from '../constants';
 
 export default function IndexHero() {
   const t = useTranslations('IndexPage.Hero');
 
   return (
-    <section className="relative container pt-12 lg:pt-24 pb-36">
+    <section className="relative max-w-[80%] xl:max-w-[60rem] mx-auto pt-12 lg:pt-24 lg:pb-36">
       <h1 className="font-bold hero-heading">
         {t.rich('title', {
           highlight: (chunks) => <span className="highlight">{chunks}</span>,
         })}
       </h1>
+
       <p className="font-light hero-subtitle mt-4 mb-6">{t('subtitle')}</p>
+
       <InternalLink href="/contact" small>
         {t('contactLink')}
       </InternalLink>
 
-      <div className='index--hero-figure'>
+      <Figure
+        src={ASSETS.IndexPage.Hero.imageSrc}
+        alt="Index Hero Cube Scene"
+        className='my-8 lg:absolute -z-10 lg:top-0 lg:-right-24 lg:w-3/6'
+      />
 
-      </div>
-
-      <div className="absolute -top-12 -right-[10%] -z-10 w-[60%]">
-        <Image
-          src="/thumbnails/hero-1.png"
-          alt=""
-          width={0}
-          height={0}
-          sizes="100vw"
-          className="w-full h-auto"
-        />
-      </div>
+      {/* <div className="absolute -z-20 -top-32 -left-24 h-[50rem] w-[15rem] bg-gradient-radial from-zinc-950 via-black to-black blur-3xl"></div> */}
     </section>
   );
 }

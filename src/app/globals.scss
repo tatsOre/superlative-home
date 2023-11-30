@@ -4,47 +4,13 @@
 
 @layer base {
   div[data-product="Prismay"] {
-    flex-basis: clamp(33%, 40%, 165px);
-  }
-
-  div[data-thumbnail="hero"] {
-    background: url('/thumbnails/expertise-2.png') no-repeat;
-    background-position: 45% -35px;
-  }
-
-  div[data-thumbnail="commitment"] {
-    background: url('/thumbnails/expertise-1.png') no-repeat;
-    background-position: 45% 10px;
-  }
-
-  div[data-thumbnail="maximization"] {
-    background: url('/thumbnails/expertise-2.png') no-repeat;
-    background-position: 45% -35px;
-  }
-
-  div[data-thumbnail="alliance"] {
-    background: url('/thumbnails/expertise-3.png') no-repeat;
-    background-position: 45% -30px;
-  }
-
-  div[data-thumbnail="design"] {
-    background: url('/thumbnails/services-1.png') no-repeat;
-    background-position: 45% -30px;
-  }
-
-  div[data-thumbnail="mobile"] {
-    background: url('/thumbnails/services-2.png') no-repeat;
-    background-position: 45% -30px;
-  }
-
-  div[data-thumbnail="development"] {
-    background: url('/thumbnails/services-3.png') no-repeat;
-    background-position: 45% -10px;
+    flex-basis: clamp(35%, 40%, 165px);
   }
 }
 
 @layer components {
   .hero-heading {
+    position: relative;
     max-width: 40rem;
     font-size: clamp(3.25rem, 10vw, 5.625rem);
     line-height: 1.05;
@@ -52,13 +18,34 @@
     .highlight {
       margin-inline-start: 0.5rem;
       padding-inline-start: 0.5rem;
-      padding-inline-end: 0.5rem;
+      padding-inline-end: 1.5rem;
       border-image-source: url('/text-accent.svg');
       border-image-slice: 17 19;
       border-image-width: 15px 15px 15px 15px;
       border-image-outset: 0px 0px 0px 0px;
       border-image-repeat: stretch stretch;
     }
+
+  &::before {
+      content: "";
+      position: absolute;
+      top: -1rem;
+      left: -1rem;
+      z-index: -10;
+      width: 5rem;
+      height: 10rem;
+      border-radius: 50%;
+      //background-color: #ff0000;
+      background-color: #6C6C6C;
+      opacity: 0.5;
+      filter: blur(2rem);
+
+      @media only screen and (max-width: 768px) {
+        width: 7.5rem;
+        height: 12.5rem;
+        filter: blur(5rem);
+      }
+    } 
   }
 
   .nav--button-mobile {

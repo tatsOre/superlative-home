@@ -26,7 +26,7 @@ export default function ProductsContent() {
   ));
 
   return (
-    <div className='flex flex-col flex-wrap min-[870px]:flex-row justify-between gap-y-16 lg:gap-y-20 pb-8'>
+    <div className='flex flex-col flex-wrap min-[800px]:flex-row justify-between gap-y-16 lg:gap-y-20 pb-8'>
       {renderedCards}
     </div>
   );

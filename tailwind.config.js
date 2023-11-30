@@ -12,6 +12,9 @@ module.exports = {
       center: true
     },
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
       colors: {
         'dark-gray': {
           light: '#212121',

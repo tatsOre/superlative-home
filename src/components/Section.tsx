@@ -18,7 +18,7 @@ export default function Section({
         <h2 className='font-bold sec-heading text-balance leading-9 lg:leading-normal'>
           {title}
         </h2>
-        <h3 className='font-light sec-subtitle text-balance mt-2 mb-16'>
+        <h3 className='font-light sec-subtitle text-balance mt-2 mb-10 lg:mb-16'>
           {subtitle}
         </h3>
         {children}
