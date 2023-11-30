@@ -1,35 +1,35 @@
 export default {
     IndexPage: {
         Hero: {
-            imageSrc: "/thumbnails/hero-1.png",
+            imageSrc: "/scenes/hero-1.gif",
             sceneSrc: "https://prod.spline.design/dGJahwqdExPlOf0h/scene.splinecode"
         }
     },
     ExpertiseSection: {
         commitment: {
-            imageSrc: "/thumbnails/expertise-1.png",
+            imageSrc: "/scenes/expertise-1.gif",
             sceneSrc: "https://prod.spline.design/04P84dPQo04RKYTI/scene.splinecode"
         },
         maximization: {
-            imageSrc: "/thumbnails/expertise-2.png",
+            imageSrc: "/scenes/expertise-2.gif",
             sceneSrc: "https://prod.spline.design/dHFDHDo9vUdlteoI/scene.splinecode"
         },
         alliance: {
-            imageSrc: "/thumbnails/expertise-3.png",
+            imageSrc: "/scenes/expertise-3.gif",
             sceneSrc: "https://prod.spline.design/jVi8qhT7aXEihLzU/scene.splinecode"
         }
     },
     ServicesSection: {
         design: {
-            imageSrc: "/thumbnails/services-1.png",
+            imageSrc: "/scenes/services-1.gif",
             sceneSrc: "https://prod.spline.design/Lz-yoT7wGNPMj4Fb/scene.splinecode"
         },
         mobile: {
-            imageSrc: "/thumbnails/services-2.png",
+            imageSrc: "/scenes/services-2.gif",
             sceneSrc: "https://prod.spline.design/WcHRMB2CdHvIi02V/scene.splinecode"
         },
         development: {
-            imageSrc: "/thumbnails/services-3.png",
+            imageSrc: "/scenes/services-3.gif",
             sceneSrc: "https://prod.spline.design/uhPyTV58NJBY62Z6/scene.splinecode"
         }
     },
@@ -63,8 +63,8 @@ export default {
             "googlePlay": "#"
         }
     },
-    Footer: {
-        imageSrc: "/thumbnails/footer-1.png",
+    ContactPage: {
+        imageSrc: "/scenes/contact-1.gif",
         sceneSrc: ""
     }
 }

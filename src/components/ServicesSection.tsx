@@ -2,6 +2,8 @@
 
 import { useTranslations } from 'next-intl';
 import InternalLink from './Link';
+import Figure from './Figure';
+import { default as ASSETS } from '../constants';
 
 export default function ServicesContent() {
   const t = useTranslations('IndexPage.ServicesSection');
@@ -9,10 +11,14 @@ export default function ServicesContent() {
   const keys = ['design', 'mobile', 'development'] as const;
 
   const renderedContent = keys.map((key) => (
-    <div key={key} className='mb-20 w-[80%] md:w-[42%] min-[1200px]:w-[30%] xl:mb-0 xl:w-[25%]'>
-      <div className='flex flex-col h-full text-center mb-20 md:mb-0'>
-        {/* Temp Mock Card Image: */}
-        <div className='w-full h-72 mb-5' data-thumbnail={key}></div>
+    <div key={key} className='w-[80%] md:w-[42%] min-[1200px]:w-[30%] xl:mb-0 xl:w-[25%]'>
+      <div className='flex flex-col h-full text-center'>
+        <Figure
+          key={key}
+          src={ASSETS.ServicesSection[key].imageSrc}
+          alt={`${key} thumbnail`}
+          className='mb-4 lg:my-8'
+        />
 
         <p className='text-3xl font-bold mb-5'>
           {t.rich(`children.${key}.title`, {
@@ -33,7 +39,7 @@ export default function ServicesContent() {
 
   /** ServicesContent and ExpertiseContent share layout CSS rules: */
   return (
-    <div className='flex flex-col items-center md:flex-row md:flex-wrap md:items-stretch md:justify-between md:[&>*:last-child]:mx-auto min-[1200px]:[&>*:last-child]:mx-0'>
+    <div className='flex flex-col items-center gap-y-16 md:flex-row md:flex-wrap md:items-stretch md:justify-between md:[&>*:last-child]:mx-auto min-[1200px]:[&>*:last-child]:mx-0'>
       {renderedContent}
     </div>
   );

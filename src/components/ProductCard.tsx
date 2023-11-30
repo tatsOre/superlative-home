@@ -1,6 +1,6 @@
-import Image from "next/image";
-import ProviderBadge from "./ProviderBadge";
 import ExternalLink from "./ExternalLink";
+import Figure from "./Figure";
+import ProviderBadge from "./ProviderBadge";
 
 type ProductCardProps = {
   title: string;
@@ -25,35 +25,26 @@ export default function ProductCard({
 }: ProductCardProps) {
   return (
     <article className="basis-full md:basis-[48%] lg:max-w-[500px] flex flex-col">
-      <div className="flex-1 bg-dark-gray rounded-[40px] p-8 xs:pl-4 pt-4 xs:flex flex-wrap items-center">
+      <div className="flex-1 bg-dark-gray rounded-3xl xs:rounded-[25px] lg:rounded-[40px] p-2 xs:p-5 md:p-3 lg:p-5 flex flex-wrap items-start">
         <h3 className="sr-only">{title}</h3>
 
         {/* Product Thumbnail */}
-        <div className="relative bg-dark-gray-light rounded-2xl p-4 mb-4 w-5/12">
-          <Image
-            src={thumbnailSrc}
-            alt={`${title} thumbnail`}
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-full h-auto"
-          />
-        </div>
+        <Figure
+          src={thumbnailSrc}
+          alt={`${title} thumbnail`}
+          className="relative bg-dark-gray-light rounded-2xl p-2 xs:p-4 mb-4 w-5/12"
+        />
 
         {/* Product Logo */}
-        <div className="relative w-1/2 ml-auto" data-product={title}>
-          <Image
-            src={logoSrc}
-            alt={`${title} logo`}
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-full h-auto"
-          />
-        </div>
+        <Figure
+          src={logoSrc}
+          alt={`${title} logo`}
+          className="relative w-1/2 pr-4 ml-auto self-center"
+          data-product={title}
+        />
 
         {/* Product Description */}
-        <p className="mt-4 font-light text-center text-lg mx-4 xl:text-2xl lg:mx-6">
+        <p className="font-light text-center text-lg m-4 lg:mx-6 xl:text-2xl">
           {description}
         </p>
       </div>

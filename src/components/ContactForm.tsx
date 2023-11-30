@@ -8,12 +8,12 @@ export default function ContactForm() {
   const inputClasses = 'text-base bg-dark-gray py-4 px-5 rounded-lg';
 
   return (
-    <form className="rounded-3xl px-3 sm:px-6 py-8 text-center flex flex-wrap gap-3 contact--form">
+    <form className="rounded-3xl px-3 sm:px-6 py-8 text-center flex flex-wrap gap-y-3 contact--form">
       <h2 className="text-2xl lg:text-4xl font-bold basis-full mb-6">
         {t('title')}
       </h2>
 
-      <div className="flex flex-col basis-full sm:basis-1/2">
+      <div className="flex flex-col w-full md:w-[calc(50%-1rem)] md:mr-4">
         <label htmlFor="name" className="sr-only">
           {t('name')}
         </label>
@@ -26,7 +26,7 @@ export default function ContactForm() {
         <span className="sr-only">This field is required</span>
       </div>
 
-      <div className="flex flex-col flex-1">
+      <div className="flex flex-col w-full md:w-1/2">
         <label htmlFor="phone" className="sr-only">
           {t('phone')}
         </label>
@@ -38,7 +38,7 @@ export default function ContactForm() {
         />
       </div>
 
-      <div className="flex flex-col basis-full">
+      <div className="flex flex-col w-full">
         <label htmlFor="message" className="sr-only">
           {t('message')}
         </label>
