@@ -9,7 +9,7 @@ export default function IndexHero() {
   const t = useTranslations('IndexPage.Hero');
 
   return (
-    <section className="relative max-w-[80%] xl:max-w-[60rem] mx-auto pt-12 lg:pt-24 lg:pb-36">
+    <section className="relative max-w-[80%] xl:max-w-[60rem] mx-auto pt-24 lg:pb-36">
       <h1 className="font-bold hero-heading">
         {t.rich('title', {
           highlight: (chunks) => <span className="highlight">{chunks}</span>,

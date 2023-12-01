@@ -12,6 +12,15 @@ export default function MobileHeader() {
 
   const menuRef = React.useRef();
 
+  React.useEffect(() => {
+    if (openMenu) {
+      document.body.style.overflow = 'hidden';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [openMenu]);
+
   const toggleMenuState = () => setOpenMenu(prev => !prev);
 
   const closeMenu = () => setOpenMenu(false);
@@ -19,9 +28,8 @@ export default function MobileHeader() {
   useClickOutside(menuRef, closeMenu);
 
   return (
-    <header className='relative w-full block min-[920px]:hidden'>
+    <header className='fixed z-10 w-full top-0 min-[920px]:hidden pt-6 pb-3 bg-black'>
       <div className='container flex items-center justify-between'>
-
         <Logotype small />
 
         <div ref={menuRef}>
