@@ -15,12 +15,16 @@ export default function Section({
   return (
     <section id={id} className={clsx('py-20', className)}>
       <div className='container'>
-        <h2 className='font-bold sec-heading text-balance leading-9 lg:leading-normal'>
-          {title}
-        </h2>
-        <h3 className='font-light sec-subtitle text-balance mt-2 mb-10 lg:mb-16'>
-          {subtitle}
-        </h3>
+        {title && (
+          <h2 className='font-bold sec-heading text-balance leading-9 lg:leading-normal'>
+            {title}
+          </h2>
+        )}
+        {subtitle && (
+          <h3 className='font-light sec-subtitle text-balance mt-2 mb-10 lg:mb-16'>
+            {subtitle}
+          </h3>
+        )}
         {children}
       </div>
     </section>
