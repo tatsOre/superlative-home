@@ -41,7 +41,12 @@ export default function MobileHeader() {
             onClick={toggleMenuState}
           />
         </div>
-
+        {openMenu && (
+          <div
+            aria-hidden="true"
+            className="absolute w-full h-screen inset-0 -z-10 bg-black opacity-60"
+          />
+        )}
       </div>
     </header>
   );

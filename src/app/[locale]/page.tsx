@@ -30,6 +30,7 @@ export default function IndexPage() {
           highlight: (chunks) => <span className='text-accent'>{chunks}</span>
         })}
         subtitle={t('ServicesSection.subtitle')}
+        className='scroll-mt-12 min-[920px]:scroll-mt-0'
       >
         <ServicesContent />
       </Section>
@@ -41,7 +42,7 @@ export default function IndexPage() {
           highlight: (chunks) => <span className='text-accent'>{chunks}</span>
         })}
         subtitle={t('TeamSection.subtitle')}
-        className='bg-dark-gray'
+        className='bg-dark-gray scroll-mt-12 min-[920px]:scroll-mt-0'
       >
         <div></div>
       </Section> 

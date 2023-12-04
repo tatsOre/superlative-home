@@ -51,7 +51,7 @@ export default async function LocaleLayout({
 
   return (
     <html className="h-full scroll-smooth" lang={locale}>
-      <body className={clsx(roboto.className, 'relative flex h-full flex-col bg-black text-white pt-8')}>
+      <body className={clsx(roboto.className, 'relative flex h-full flex-col bg-black text-white pt-10')}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <MobileHeader />
