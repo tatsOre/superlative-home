@@ -28,7 +28,7 @@ export default function MobileHeader() {
   useClickOutside(menuRef, closeMenu);
 
   return (
-    <header className='fixed z-10 w-full top-0 min-[920px]:hidden pt-6 pb-3 bg-black'>
+    <header className='fixed z-10 w-full top-0 min-[920px]:hidden pt-6 pb-4 bg-black'>
       <div className='container flex items-center justify-between'>
         <Logotype small />
 
