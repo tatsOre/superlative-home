@@ -1,15 +1,17 @@
 'use client';
 
+import { ReactNode } from 'react';
 import { useTranslations } from 'next-intl';
 import NavigationLink from './NavigationLink';
 
 type Props = {
+  children?: ReactNode | string;
   className?: string;
   id?: string;
   onClick?(): void;
 };
 
-export default function NavigationItems({ className, id, onClick }: Props) {
+export default function NavigationItems({ children, className, id, onClick }: Props) {
   const t = useTranslations('Navigation');
 
   return (
@@ -29,6 +31,7 @@ export default function NavigationItems({ className, id, onClick }: Props) {
       <NavigationLink href={t('contact.href')} onClick={onClick}>
         {t('contact.label')}
       </NavigationLink>
+      {children}
     </div>
   );
 }
