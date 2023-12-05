@@ -13,11 +13,19 @@ export default function ServicesContent() {
   const renderedContent = keys.map((key) => (
     <div key={key} className='w-[80%] md:w-[42%] min-[1200px]:w-[30%] xl:mb-0 xl:w-[25%]'>
       <div className='flex flex-col h-full text-center'>
+        {/*
+         * Specify the width and height attributes to enable Next.js to allocate space
+         * for images, ensuring the total height of the viewport is accurately recalculated. 
+         * This prevents anchor links from redirecting to incorrect sections of the page.
+         * Applies for ExpertiseSection 
+         */}
         <Figure
           key={key}
           src={ASSETS.ServicesSection[key].imageSrc}
           alt={`${key} thumbnail`}
           className='mb-4 lg:my-8'
+          width={480}
+          height={480}
         />
 
         <p className='text-3xl font-bold mb-5'>

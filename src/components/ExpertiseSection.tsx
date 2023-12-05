@@ -16,6 +16,8 @@ export default function ExpertiseContent() {
         src={ASSETS.ExpertiseSection[key].imageSrc}
         alt={`${key} thumbnail`}
         className='mb-4 lg:my-8'
+        width={480}
+        height={480}
       />
 
       <p className='text-lg font-light text-justify'>
