@@ -113,14 +113,12 @@
   }
 
   .navbar--default {
-    @apply flex gap-x-3 mx-9;
-
     & .nav--link {
       @apply inline-block px-6 py-1 font-bold tracking-wide rounded-full transition-colors;
     }
 
     & .nav--link-contact {
-      @apply text-black bg-white hover:bg-accent;
+      @apply text-black bg-white hover:bg-accent ml-4;
 
       &.nav--link-active {
         @apply bg-accent;
@@ -137,14 +135,18 @@
   }
 
   .navbar--small {
-    @apply fixed -top-full inset-x-0 py-8 bg-black transition-all duration-300;
+    @apply flex flex-col items-stretch fixed -top-full inset-x-0 py-8 bg-black transition-all duration-300;
 
     &-open {
-      @apply top-[80px] bg-black;
+      @apply top-[80px];
     }
 
     & .nav--link {
-      @apply w-full block text-center py-3.5 font-bold text-[22px];
+      @apply text-center py-3.5 font-bold text-[22px];
+    }
+
+    & button {
+      @apply justify-center py-3.5 text-white text-[20px];
     }
   }
 

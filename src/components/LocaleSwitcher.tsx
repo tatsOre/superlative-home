@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next-intl/client';
-import { ChangeEvent, useTransition } from 'react';
+import { MouseEvent, useTransition } from 'react';
 
 export default function LocaleSwitcher() {
   const t = useTranslations('LocaleSwitcher');
@@ -12,50 +12,49 @@ export default function LocaleSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
 
-  function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
-    const nextLocale = event.target.value;
+  function onClickHandler(event: MouseEvent<HTMLButtonElement>) {
+    const nextLocale = locale === 'en' ? 'es' : 'en';
     startTransition(() => {
       router.replace(pathname, { locale: nextLocale });
     });
   }
 
   return (
-    <label
+    <button
+      disabled={isPending}
+      onClick={onClickHandler}
+      id="locale-switcher"
       className={clsx(
-        'inline-block relative text-neutral-400',
-        isPending && 'transition-opacity [&:disabled]:opacity-30'
+        "text-neutral-400 flex items-center gap-x-1.5 px-6 py-1 hover:text-neutral-300",
+        isPending && "transition-opacity [&:disabled]:opacity-30"
       )}
     >
-      <p className="sr-only">{t('label')}</p>
-      <select
-        className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-7"
-        defaultValue={locale}
-        disabled={isPending}
-        onChange={onSelectChange}
-      >
-        {['en', 'es'].map((cur) => (
-          <option key={cur} value={cur}>
-            {t('locale', { locale: cur })}
-          </option>
-        ))}
-      </select>
-      <span className={`pointer-events-none absolute right-2 top-[17px] rotate-180`}>
+      <span>
         <svg
-          xmlns='http://www.w3.org/2000/svg'
-          className='icon icon-tabler icon-tabler-chevron-up'
-          width={16}
-          height={16}
-          viewBox='0 0 24 24'
-          stroke="#a3a3a3"
-          strokeWidth='3'
-          fill='none'
-          strokeLinecap='round'
-          strokeLinejoin='round'
+          className="hover:text-neutral-300"
+          width="16px"
+          height="16px"
+          viewBox="0 0 24 24"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-labelledby="languageIconTitle"
+          strokeWidth="1"
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
-          <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-          <polyline points='6 15 12 9 18 15' />
+          <title id="languageIconTitle">{t('locale', { locale })}</title>
+          <circle cx="12" cy="12" r="10" />
+          <path
+            strokeLinecap="round"
+            d="M12,22 C14.6666667,19.5757576 16,16.2424242 16,12 C16,7.75757576 14.6666667,4.42424242 12,2 C9.33333333,4.42424242 8,7.75757576 8,12 C8,16.2424242 9.33333333,19.5757576 12,22 Z"
+          />
+          <path strokeLinecap="round" d="M2.5 9L21.5 9M2.5 15L21.5 15" />
         </svg>
       </span>
-    </label>
+
+      <span>{t('locale', { locale: locale === 'en' ? 'es' : 'en' })}</span>
+    </button>
   );
 }
